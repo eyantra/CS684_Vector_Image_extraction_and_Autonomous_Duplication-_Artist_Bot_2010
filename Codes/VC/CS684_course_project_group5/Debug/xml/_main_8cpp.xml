@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="_main_8cpp" kind="file">
+    <compoundname>Main.cpp</compoundname>
+    <includes refid="includes_8h" local="yes">includes.h</includes>
+    <incdepgraph>
+      <node id="24">
+        <label>list</label>
+      </node>
+      <node id="31">
+        <label>operations.h</label>
+        <link refid="operations_8h"/>
+      </node>
+      <node id="28">
+        <label>atlstr.h</label>
+      </node>
+      <node id="22">
+        <label>assert.h</label>
+      </node>
+      <node id="30">
+        <label>vector_extract.h</label>
+        <link refid="vector__extract_8h"/>
+      </node>
+      <node id="26">
+        <label>highgui.h</label>
+      </node>
+      <node id="23">
+        <label>fstream</label>
+      </node>
+      <node id="32">
+        <label>stdafx.h</label>
+        <link refid="stdafx_8h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>serialcomm.h</label>
+        <link refid="serialcomm_8h"/>
+      </node>
+      <node id="19">
+        <label>Main.cpp</label>
+        <link refid="Main.cpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>cv.h</label>
+      </node>
+      <node id="27">
+        <label>math.h</label>
+      </node>
+      <node id="20">
+        <label>includes.h</label>
+        <link refid="includes_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>point.h</label>
+        <link refid="point_8h"/>
+      </node>
+      <node id="21">
+        <label>iostream</label>
+      </node>
+      <node id="33">
+        <label>targetver.h</label>
+        <link refid="targetver_8h"/>
+      </node>
+      <node id="35">
+        <label>tchar.h</label>
+      </node>
+      <node id="34">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_main_8cpp_1ac97b8ee753e4405397a42ad5799b0f9e" prot="public" static="no">
+        <name>null</name>
+        <initializer>&apos;\0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Global variable to maintain the image matrix /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="2" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** mat</definition>
+        <argsstring></argsstring>
+        <name>mat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="8" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void capture_image</definition>
+        <argsstring>(char *)</argsstring>
+        <name>capture_image</name>
+        <param>
+          <type>char *</type>
+          <defname>filemane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Moves the BOT to the next end point /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="10" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="54" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorGeneration</definition>
+        <argsstring>(char *, IplImage *, list&lt; point &gt;)</argsstring>
+        <name>vectorGeneration</name>
+        <param>
+          <type>char *</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <defname>img</defname>
+        </param>
+        <param>
+          <type>list&lt; <ref refid="classpoint" kindref="compound">point</ref> &gt;</type>
+          <defname>endPoints</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="11" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="149" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sample</definition>
+        <argsstring>(char *, IplImage *)</argsstring>
+        <name>sample</name>
+        <param>
+          <type>char *</type>
+          <defname>imgfile</defname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <defname>img</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Apply median filter to smooth /summary&gt;</para><para>Red boundary detection make all pixles which are outside the red boundary white. /summary&gt;</para><para>Thresholding according to grey scale /summary&gt;</para><para>Thinning the thresholded image /summary&gt;</para><para>Generate vectors and do further processing /summary&gt; </para>        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="12" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="234" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1aacd29bb3b4818090616c01a558e13add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_vector_image</definition>
+        <argsstring>(list&lt; point &gt;)</argsstring>
+        <name>show_vector_image</name>
+        <param>
+          <type>list&lt; <ref refid="classpoint" kindref="compound">point</ref> &gt;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Show the vector image drawm /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="18"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a404439f0d9f2c125995deecd26bf22d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void show_vector_image</definition>
+        <argsstring>(list&lt; point &gt; path, char *imgfile, IplImage *img1)</argsstring>
+        <name>show_vector_image</name>
+        <param>
+          <type>list&lt; <ref refid="classpoint" kindref="compound">point</ref> &gt;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>imgfile</declname>
+        </param>
+        <param>
+          <type>IplImage *</type>
+          <declname>img1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Capture image from webcam /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="20" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1a00ef12e51e9dc321e5e1c4aef786a1a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list&lt; double &gt;</type>
+        <definition>list&lt;double&gt; moveToNextEnd</definition>
+        <argsstring>(list&lt; double &gt; moves, point prev_endCur, point endCur, point startNext, point next_startNext)</argsstring>
+        <name>moveToNextEnd</name>
+        <param>
+          <type>list&lt; double &gt;</type>
+          <declname>moves</declname>
+        </param>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>prev_endCur</declname>
+        </param>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>endCur</declname>
+        </param>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>startNext</declname>
+        </param>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>next_startNext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Generates vectors from the image /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="100" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="100" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" line="306" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp" bodystart="305" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="includes_8h" kindref="compound">includes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="_main_8cpp_1ac97b8ee753e4405397a42ad5799b0f9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>null<sp/>&apos;\0&apos;<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" refkind="member"><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/><ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" kindref="member">capture_image</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" kindref="member">vectorGeneration</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>,<sp/>IplImage*<sp/>,<sp/>list&lt;point&gt;<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" kindref="member">sample</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>,IplImage*<sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1aacd29bb3b4818090616c01a558e13add" kindref="member">show_vector_image</ref><sp/>(list&lt;point&gt;);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_main_8cpp_1a404439f0d9f2c125995deecd26bf22d9" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1aacd29bb3b4818090616c01a558e13add" kindref="member">show_vector_image</ref><sp/>(list&lt;point&gt;<sp/>path,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imgfile,IplImage*<sp/>img1)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Showing<sp/>vector<sp/>image\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage*<sp/>img=cvLoadImage(imgfile);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(img==0)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can<sp/>not<sp/>open<sp/>output<sp/>file<sp/>to<sp/>show<sp/>extracted<sp/>vector<sp/>image\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;point&gt;::iterator<sp/>it<sp/>=<sp/>path.begin();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>prev_point<sp/>=<sp/>(*it);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;it!=path.end();it++)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(img,<sp/>cvPoint((*it).get_Y(),(*it).get_X()),<sp/>cvPoint(prev_point.<ref refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" kindref="member">get_Y</ref>(),prev_point.<ref refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kindref="member">get_X</ref>()),<sp/>cvScalar(0,255,0),<sp/>4);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle<sp/>(img,cvPoint((*it).get_Y(),(*it).get_X()),1,cvScalar<sp/>(255,0,0),2);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle<sp/>(img,cvPoint(prev_point.<ref refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" kindref="member">get_Y</ref>(),prev_point.<ref refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kindref="member">get_X</ref>()),1,cvScalar<sp/>(255,0,0),2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvLine(img1,<sp/>cvPoint((*it).get_Y(),(*it).get_X()),<sp/>cvPoint(prev_point.<ref refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" kindref="member">get_Y</ref>(),prev_point.<ref refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kindref="member">get_X</ref>()),<sp/>cvScalar(0,255,0),<sp/>4);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle<sp/>(img1,cvPoint((*it).get_Y(),(*it).get_X()),1,cvScalar<sp/>(255,0,0),2);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvCircle<sp/>(img1,cvPoint(prev_point.<ref refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" kindref="member">get_Y</ref>(),prev_point.<ref refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kindref="member">get_X</ref>()),1,cvScalar<sp/>(255,0,0),2);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev_point<sp/>=<sp/>*it;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//display(&quot;mainWin&quot;,<sp/>img<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="operations_8h_1a635cd1f9842f6b23d2573166f06a589c" kindref="member">display</ref>(</highlight><highlight class="stringliteral">&quot;mainWin2&quot;</highlight><highlight class="normal">,<sp/>img1<sp/>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseImage(&amp;img<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" kindref="member">capture_image</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filemane)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage*<sp/>frame<sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CV_CAP_ANY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CvCapture*<sp/>capture<sp/>=<sp/>cvCaptureFromCAM(<sp/>1<sp/>);<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!capture<sp/>)<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(<sp/>stderr,<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>capture<sp/>is<sp/>NULL<sp/>\n&quot;</highlight><highlight class="normal"><sp/>);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>window<sp/>in<sp/>which<sp/>the<sp/>captured<sp/>images<sp/>will<sp/>be<sp/>presented<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvNamedWindow(<sp/></highlight><highlight class="stringliteral">&quot;mywindow&quot;</highlight><highlight class="normal">,<sp/>CV_WINDOW_AUTOSIZE<sp/>);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Show<sp/>the<sp/>image<sp/>captured<sp/>from<sp/>the<sp/>camera<sp/>in<sp/>the<sp/>window<sp/>and<sp/>repeat<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>1<sp/>)<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>one<sp/>frame<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame<sp/>=<sp/>cvQueryFrame(<sp/>capture<sp/>);<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>!frame<sp/>)<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(<sp/>stderr,<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>frame<sp/>is<sp/>null...\n&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvShowImage(<sp/></highlight><highlight class="stringliteral">&quot;mywindow&quot;</highlight><highlight class="normal">,<sp/>frame<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Do<sp/>not<sp/>release<sp/>the<sp/>frame<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//If<sp/>ESC<sp/>key<sp/>pressed,<sp/>Key=0x10001B<sp/>under<sp/>OpenCV<sp/>0.9.7(linux<sp/>version),<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//remove<sp/>higher<sp/>bits<sp/>using<sp/>AND<sp/>operator<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(cvWaitKey(10)<sp/>&amp;<sp/>255)<sp/>==<sp/>27<sp/>)<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Show<sp/>the<sp/>image<sp/>frame.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvShowImage(<sp/></highlight><highlight class="stringliteral">&quot;mywindow&quot;</highlight><highlight class="normal">,<sp/>frame<sp/>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvWaitKey(0);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>the<sp/>image<sp/>in<sp/>specified<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!cvSaveImage(filemane,frame))<sp/>printf(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>save:<sp/>%s\n&quot;</highlight><highlight class="normal">,filemane);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Release<sp/>the<sp/>capture<sp/>device<sp/>and<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvReleaseCapture(<sp/>&amp;capture<sp/>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cvDestroyWindow(<sp/></highlight><highlight class="stringliteral">&quot;mywindow&quot;</highlight><highlight class="normal"><sp/>);<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_main_8cpp_1a00ef12e51e9dc321e5e1c4aef786a1a5" refkind="member"><highlight class="normal">list&lt;double&gt;<sp/><ref refid="_main_8cpp_1a00ef12e51e9dc321e5e1c4aef786a1a5" kindref="member">moveToNextEnd</ref>(list&lt;double&gt;<sp/>moves,<sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>prev_endCur,<sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>endCur,<sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>startNext,<sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>next_startNext){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle1,angle2,angle3;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle1=endCur.<ref refid="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" kindref="member">angleBetweenPoints</ref>(prev_endCur);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle2=startNext.<ref refid="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" kindref="member">angleBetweenPoints</ref>(endCur);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle3=next_startNext.<ref refid="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" kindref="member">angleBetweenPoints</ref>(startNext);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dif_angle=angle2-angle3;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dif_angle&gt;180)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle-=360;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dif_angle&lt;-180)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle+=360;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(((angle3/10)*(angle2/10))&lt;0)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle=-dif_angle;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="vector__extract_8h_1a0bf987e9977ab76c2bb626ca0f1bede1" kindref="member">TURN</ref><sp/>=<sp/>(dif_angle)<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//push<sp/>in<sp/>reverse<sp/>order</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(TURN);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(fabs(dif_angle));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle=angle1-angle2;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dif_angle&gt;180)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle-=360;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dif_angle&lt;-180)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle+=360;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(((angle1/10)*(angle2/10))&lt;0)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dif_angle=-dif_angle;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TURN<sp/>=<sp/>(dif_angle)<sp/>&lt;<sp/>0<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distance=endCur.<ref refid="classpoint_1aa1af528ca96a10e9d3a3e6b1af7112ee" kindref="member">distance</ref>(startNext);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(distance);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(2);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(0);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(0);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(TURN);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves.push_front(fabs(dif_angle));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>moves;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" kindref="member">vectorGeneration</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/>IplImage*<sp/>img,<sp/>list&lt;point&gt;<sp/>endPoints){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;point&gt;<sp/>path;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;point&gt;<sp/>refined_path;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size=endPoints.size();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;double&gt;<sp/>whole_moves;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>lastPoint=<ref refid="classpoint" kindref="compound">point</ref>(-1,-1);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>lastlastPoint,frontNext;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(endPoints.empty()==</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpoint" kindref="compound">point</ref><sp/>start_point=endPoints.front();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>endPoints.pop_front();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>path<sp/>=<sp/><ref refid="vector__extract_8h_1a9dd7ffba175a0f077970f21491961148" kindref="member">traverse_black_line</ref>(<ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>,start_point);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>endPoints.remove<sp/>(path.back());</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(path.size()==1)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refined_path<sp/>=<sp/><ref refid="vector__extract_8h_1a95fb0633c7621b0578fbaaae27c7937b" kindref="member">appriximate_straight_line</ref>(path,8);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;\n\n\n<sp/>2nd<sp/>refine<sp/>\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refined_path<sp/>=<sp/><ref refid="vector__extract_8h_1a95fb0633c7621b0578fbaaae27c7937b" kindref="member">appriximate_straight_line</ref>(refined_path,1);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create_refined_file<sp/>(refined_path);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(refined_path.size()&lt;=1)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_main_8cpp_1aacd29bb3b4818090616c01a558e13add" kindref="member">show_vector_image</ref>(refined_path,filename,img);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size=endPoints.size();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;&quot;<sp/>\n\n\n<sp/>Size<sp/>of<sp/>list&quot;&lt;&lt;size;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;double&gt;<sp/>moves=<ref refid="vector__extract_8h_1ac0516c1899db400fb0b0556ac60da454" kindref="member">find_direction_vector</ref>(refined_path);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frontNext=refined_path.front();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refined_path.pop_front();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refined_path.push_front(frontNext);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(lastPoint.<ref refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kindref="member">get_X</ref>()!=-1)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves=<ref refid="_main_8cpp_1a00ef12e51e9dc321e5e1c4aef786a1a5" kindref="member">moveToNextEnd</ref>(moves,<sp/>lastlastPoint,<sp/>lastPoint,<sp/>frontNext,<sp/>refined_path.front());</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastPoint=<ref refid="classpoint" kindref="compound">point</ref>(refined_path.back());</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>refined_path.pop_back();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastlastPoint=refined_path.back();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(moves.size()==0)</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;double&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it=moves.begin();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;it!=moves.end();it++,i++)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>whole_moves.push_back<sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(*it));</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*moves_int=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">[whole_moves.size()];</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list&lt;double&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it=whole_moves.begin();</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;it!=whole_moves.end();it++,i++)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moves_int[i]=(int)(*it);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i%3==0)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DIST<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i%3==1)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;ANGLE<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i%3==2)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;DIRECTION<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;moves_int[i];</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>whole_moves.push_back(0);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>whole_moves.push_back(2);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="serialcomm_8h_1a840cf0edf5194046c2014606b615c7c7" kindref="member">writeOnBot</ref>(moves_int,whole_moves.size());</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" kindref="member">sample</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>imgfile,IplImage*<sp/>img)</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>IplImage*<sp/>img<sp/>=<sp/>0;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,width,step,channels;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>load<sp/>an<sp/>image<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>img=cvLoadImage(imgfile);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!img)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>load<sp/>image<sp/>file:<sp/>%s\n&quot;</highlight><highlight class="normal">,imgfile);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>the<sp/>image<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>height<sp/><sp/><sp/><sp/>=<sp/>img-&gt;height;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>width<sp/><sp/><sp/><sp/><sp/>=<sp/>img-&gt;width;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>step<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>img-&gt;widthStep;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>channels<sp/><sp/>=<sp/>img-&gt;nChannels;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>data<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>img-&gt;imageData;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//defining<sp/>global<sp/>variables<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><ref refid="vector__extract_8h_1a16611451551e3d15916bae723c3f59f7" kindref="member">h</ref>=height;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><ref refid="vector__extract_8h_1aac374e320caaadeca4874add33b62af2" kindref="member">w</ref>=width;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Processing<sp/>a<sp/>%dx%d<sp/>image<sp/>with<sp/>%d<sp/>channels\n&quot;</highlight><highlight class="normal">,height,width,channels);<sp/></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n\n<sp/>height<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;height&lt;&lt;</highlight><highlight class="stringliteral">&quot;\nwidth<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;width&lt;&lt;</highlight><highlight class="stringliteral">&quot;\nwidthStep<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;step&lt;&lt;</highlight><highlight class="stringliteral">&quot;\nChannel<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;channels;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>cvNamedWindow(</highlight><highlight class="stringliteral">&quot;mainWin&quot;</highlight><highlight class="normal">,<sp/>CV_WINDOW_AUTOSIZE);<sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>cvMoveWindow(</highlight><highlight class="stringliteral">&quot;mainWin&quot;</highlight><highlight class="normal">,<sp/>100,<sp/>100);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*[height+1];</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;height+1;i++)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>[i]=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[width+1];</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>cvSmooth(img,img,CV_MEDIAN);</highlight><highlight class="comment">//<sp/>display<sp/>(&quot;mainWinSmooth&quot;,img);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><ref refid="operations_8h_1a46ba61313a62305e1ee2a6ccfcc0190c" kindref="member">BoundaryDetection</ref>(img,140,60,60);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><ref refid="operations_8h_1a4c55f58a39a34b26c44d954b7390fe1a" kindref="member">Thresholding</ref>(img,100);</highlight><highlight class="comment">//<sp/><sp/><sp/>display<sp/>(&quot;mainWinThes&quot;,<sp/>img<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><ref refid="operations_8h_1a054c3e82fa39265684b69e272e5dc830" kindref="member">Thinning</ref>(img,<ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>);</highlight><highlight class="comment">//<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><ref refid="operations_8h_1a635cd1f9842f6b23d2573166f06a589c" kindref="member">display</ref>(</highlight><highlight class="stringliteral">&quot;mainWinThinned&quot;</highlight><highlight class="normal">,<sp/>img<sp/>);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>list&lt;point&gt;<sp/>endPoints<sp/>=<sp/><ref refid="vector__extract_8h_1aad93ba4710ade791418ffe0dc686baac" kindref="member">StartPoints</ref>(img,<ref refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kindref="member">mat</ref>);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><ref refid="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" kindref="member">vectorGeneration</ref>(imgfile,<sp/>img,<sp/>endPoints);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//release<sp/>all<sp/>resouces<sp/>that<sp/>were<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>cvReleaseImage(&amp;img<sp/>);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref><sp/>()</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IplImage*<sp/>img=0;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;face2.jpg&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" kindref="member">capture_image</ref>(filename);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" kindref="member">sample</ref>(filename,img);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getchar();</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/Main.cpp"/>
+  </compounddef>
+</doxygen>

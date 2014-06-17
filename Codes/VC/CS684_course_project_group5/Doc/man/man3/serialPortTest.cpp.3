@@ -1,0 +1,112 @@
+.TH "serialPortTest.cpp" 3 "Mon Nov 8 2010" "Version 1" "CS684_course_project_group5" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+serialPortTest.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'stdafx.h'\fP
+.br
+\fC#include <atlstr.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBserialOpen\fP (CString PortSpecifier)"
+.br
+.ti -1c
+.RI "bool \fBWriteComPort\fP (int number)"
+.br
+.ti -1c
+.RI "int \fBwriteOnBot\fP (int *moves, int length)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "HANDLE \fBhPort\fP"
+.br
+.ti -1c
+.RI "DWORD \fBbyteswritten\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool serialOpen (CString PortSpecifier)"
+.PP
+Definition at line 10 of file serialPortTest.cpp.
+.PP
+.nf
+{
+        DCB dcb;
+        hPort = CreateFile(
+                PortSpecifier,
+                GENERIC_WRITE,
+                0,
+                NULL,
+                OPEN_EXISTING,
+                0,
+                NULL
+                );
+        if (!GetCommState(hPort,&dcb))
+                return false;
+        dcb.BaudRate = CBR_9600; //9600 Baud
+        dcb.ByteSize = 8; //8 data bits
+        dcb.Parity = NOPARITY; //no parity
+        dcb.StopBits = ONESTOPBIT; //1 stop
+        if (!SetCommState(hPort,&dcb))
+                return false;
+        return true;
+}
+.fi
+.SS "bool WriteComPort (int number)"
+.PP
+Definition at line 33 of file serialPortTest.cpp.
+.PP
+.nf
+{
+        char data[2] = {number,'\0'};
+        bool retVal = WriteFile(hPort,data,1,&byteswritten,NULL);
+        return retVal;
+}
+.fi
+.SS "int writeOnBot (int * moves, int length)"
+.PP
+Definition at line 40 of file serialPortTest.cpp.
+.PP
+.nf
+{
+        char input[3];
+        if(!serialOpen('COM7'))
+                return -1;
+//      int array[10] = {10,30,10,-45,15,255};
+//      list<double>::iterator it;
+//      it=moves.begin();
+
+        int i;
+//      for(;it!=moves.end();it++)
+        for(i=0;i<length;i++)
+        {
+                int m=moves[i];//(*it);
+//              WriteComPort(m);
+//              printf('\nmove: %d',m);
+                Sleep(500);
+        }
+        return 0;
+}
+.fi
+.SH "Variable Documentation"
+.PP 
+.SS "DWORD \fBbyteswritten\fP"
+.PP
+Definition at line 8 of file serialPortTest.cpp.
+.SS "HANDLE \fBhPort\fP"
+.PP
+Definition at line 7 of file serialPortTest.cpp.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CS684_course_project_group5 from the source code.

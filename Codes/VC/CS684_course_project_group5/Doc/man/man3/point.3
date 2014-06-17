@@ -1,0 +1,72 @@
+.TH "point" 3 "Mon Nov 8 2010" "Version 1" "CS684_course_project_group5" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+point \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpoint\fP (int _x, int _y)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (\fBpoint\fP p)"
+.br
+.ti -1c
+.RI "bool \fBoperator!=\fP (\fBpoint\fP p)"
+.br
+.ti -1c
+.RI "double \fBslope\fP (\fBpoint\fP p1)"
+.br
+.ti -1c
+.RI "double \fBangleBetweenPoints\fP (\fBpoint\fP p2)"
+.br
+.ti -1c
+.RI "double \fBdistance\fP (\fBpoint\fP p1)"
+.br
+.ti -1c
+.RI "bool \fBinvalid\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_X\fP ()"
+.br
+.ti -1c
+.RI "int \fBget_Y\fP ()"
+.br
+.ti -1c
+.RI "void \fBset_X\fP (int x)"
+.br
+.ti -1c
+.RI "void \fBset_Y\fP (int y)"
+.br
+.ti -1c
+.RI "void \fBdisplay\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 4 of file point.h.
+.SH "Member Function Documentation"
+.PP 
+.SS "double point::angleBetweenPoints (\fBpoint\fP p2)\fC [inline]\fP"summary> Calculates distance between p1 and p2 /summary> 
+.PP
+Definition at line 48 of file point.h.
+.SS "double point::distance (\fBpoint\fP p1)\fC [inline]\fP"summary> returns true for (-1,-1) as this indicates an invalid point otherwise return flase /summary> 
+.PP
+Definition at line 86 of file point.h.
+.SS "bool point::operator!= (\fBpoint\fP p)\fC [inline]\fP"summary> Calculates slope between p1 and p2 /summary> 
+.PP
+Definition at line 11 of file point.h.
+.SS "void point::set_Y (int y)\fC [inline]\fP"summary> Displays a point /summary> 
+.PP
+Definition at line 108 of file point.h.
+.SS "double point::slope (\fBpoint\fP p1)\fC [inline]\fP"summary> Calculates angle between points /summary> 
+.PP
+Definition at line 16 of file point.h.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CS684_course_project_group5 from the source code.

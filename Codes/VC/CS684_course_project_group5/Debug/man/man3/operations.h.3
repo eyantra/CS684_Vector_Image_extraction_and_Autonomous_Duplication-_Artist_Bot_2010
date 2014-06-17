@@ -1,0 +1,59 @@
+.TH "operations.h" 3 "Mon Nov 8 2010" "Version 1" "CS684_course_project_group5" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+operations.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdisplay\fP (char *, IplImage *)"
+.br
+.ti -1c
+.RI "void \fBwrite2file\fP (short **, int, int, char *)"
+.br
+.ti -1c
+.RI "void \fBThinning\fP (IplImage *, char **)"
+.br
+.ti -1c
+.RI "void \fBThresholding\fP (IplImage *, int)"
+.br
+.ti -1c
+.RI "void \fBcrop\fP (IplImage *, \fBpoint\fP *, \fBpoint\fP *, int)"
+.br
+.ti -1c
+.RI "void \fBBoundaryDetection\fP (IplImage *, int, int, int)"
+.br
+.ti -1c
+.RI "list< \fBpoint\fP > \fBjoining_collinear_points\fP (list< \fBpoint\fP > path)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void BoundaryDetection (IplImage * img, int red_threshold, int green_thres, int blue_thres)"summary> Displays the image img in the window specified /summary> 
+.PP
+Definition at line 357 of file operations.h.
+.SS "void crop (IplImage * img, \fBpoint\fP * p1, \fBpoint\fP * p2, int red_threshold)"summary> Detects the red rectangle and crops the image accordingly /summary> 
+.PP
+Definition at line 327 of file operations.h.
+.SS "void display (char * window_name, IplImage * img)"
+.PP
+Definition at line 411 of file operations.h.
+.SS "list<\fBpoint\fP> joining_collinear_points (list< \fBpoint\fP > path)"
+.PP
+Definition at line 419 of file operations.h.
+.SS "void Thinning (IplImage * img, char ** mat)"summary> Converts an image into a binary image according to a given threshold threshold: the given threshold /summary> 
+.PP
+Definition at line 23 of file operations.h.
+.SS "void Thresholding (IplImage * img, int threshold)"summary> Any pixiel outside the red rectangle is converted to white pixel /summary> 
+.PP
+Definition at line 294 of file operations.h.
+.SS "void write2file (short ** mat, int r, int c, char * file)"summary> Thins a given image /summary> 
+.PP
+Definition at line 9 of file operations.h.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CS684_course_project_group5 from the source code.

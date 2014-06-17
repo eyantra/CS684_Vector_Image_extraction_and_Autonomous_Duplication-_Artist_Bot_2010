@@ -1,0 +1,456 @@
+\hypertarget{_main_8cpp}{
+\section{Main.cpp File Reference}
+\label{_main_8cpp}\index{Main.cpp@{Main.cpp}}
+}
+{\ttfamily \#include \char`\"{}includes.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}{null}~'$\backslash$0'
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}{capture\_\-image} (char $\ast$)
+\item 
+void \hyperlink{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}{vectorGeneration} (char $\ast$, IplImage $\ast$, list$<$ \hyperlink{classpoint}{point} $>$)
+\item 
+void \hyperlink{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}{sample} (char $\ast$, IplImage $\ast$)
+\item 
+void \hyperlink{_main_8cpp_aacd29bb3b4818090616c01a558e13add}{show\_\-vector\_\-image} (list$<$ \hyperlink{classpoint}{point} $>$)
+\item 
+void \hyperlink{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}{show\_\-vector\_\-image} (list$<$ \hyperlink{classpoint}{point} $>$ path, char $\ast$imgfile, IplImage $\ast$img1)
+\item 
+list$<$ double $>$ \hyperlink{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}{moveToNextEnd} (list$<$ double $>$ moves, \hyperlink{classpoint}{point} prev\_\-endCur, \hyperlink{classpoint}{point} endCur, \hyperlink{classpoint}{point} startNext, \hyperlink{classpoint}{point} next\_\-startNext)
+\item 
+int \hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}{mat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}{
+\index{Main.cpp@{Main.cpp}!null@{null}}
+\index{null@{null}!Main.cpp@{Main.cpp}}
+\subsubsection[{null}]{\setlength{\rightskip}{0pt plus 5cm}\#define null~'$\backslash$0'}}
+\label{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}
+
+
+Definition at line 2 of file Main.cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}{
+\index{Main.cpp@{Main.cpp}!capture\_\-image@{capture\_\-image}}
+\index{capture\_\-image@{capture\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{capture\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void capture\_\-image (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ filemane}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}
+Capture image from webcam 
+
+Definition at line 54 of file Main.cpp.
+
+
+\begin{DoxyCode}
+{
+        IplImage* frame = 0;            
+        //CV_CAP_ANY
+        CvCapture* capture = cvCaptureFromCAM( 1 );   
+        if( !capture ) 
+        {     
+                fprintf( stderr, "ERROR: capture is NULL \n" );     
+                return;   
+        }    
+        // Create a window in which the captured images will be presented   
+        cvNamedWindow( "mywindow", CV_WINDOW_AUTOSIZE );    
+        // Show the image captured from the camera in the window and repeat   
+        while( 1 ) 
+        {     
+                // Get one frame     
+                frame = cvQueryFrame( capture );     
+                if( !frame ) 
+                {       
+                        fprintf( stderr, "ERROR: frame is null...\n" );
+                        return;
+                }      
+                cvShowImage( "mywindow", frame );                               
+                // Do not release the frame     
+                //If ESC key pressed, Key=0x10001B under OpenCV 0.9.7(linux versi
+      on),     
+                //remove higher bits using AND operator     
+                if( (cvWaitKey(10) & 255) == 27 ) 
+                {
+                        break;   
+                }
+        }    
+        // Show the image frame.
+        cvShowImage( "mywindow", frame );
+        cvWaitKey(0);
+        // Save the image in specified filename
+        if(!cvSaveImage(filemane,frame)) printf("Could not save: %s\n",filemane);
+      
+        // Release the capture device and window
+        cvReleaseCapture( &capture );
+        cvDestroyWindow( "mywindow" ); 
+}
+\end{DoxyCode}
+\hypertarget{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+\index{Main.cpp@{Main.cpp}!main@{main}}
+\index{main@{main}!Main.cpp@{Main.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definition at line 309 of file Main.cpp.
+
+
+\begin{DoxyCode}
+{
+        IplImage* img=0;
+        char* filename = "face2.jpg";
+        capture_image(filename);
+        sample(filename,img);
+
+        getchar();
+        return 0;
+}\end{DoxyCode}
+\hypertarget{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}{
+\index{Main.cpp@{Main.cpp}!moveToNextEnd@{moveToNextEnd}}
+\index{moveToNextEnd@{moveToNextEnd}!Main.cpp@{Main.cpp}}
+\subsubsection[{moveToNextEnd}]{\setlength{\rightskip}{0pt plus 5cm}list$<$double$>$ moveToNextEnd (
+\begin{DoxyParamCaption}
+\item[{list$<$ double $>$}]{ moves, }
+\item[{{\bf point}}]{ prev\_\-endCur, }
+\item[{{\bf point}}]{ endCur, }
+\item[{{\bf point}}]{ startNext, }
+\item[{{\bf point}}]{ next\_\-startNext}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}
+Moves the BOT to the next end point 
+
+Definition at line 100 of file Main.cpp.
+
+
+\begin{DoxyCode}
+                                                                                 
+                                           {
+
+        double angle1,angle2,angle3;
+        angle1=endCur.angleBetweenPoints(prev_endCur);
+        angle2=startNext.angleBetweenPoints(endCur);
+        angle3=next_startNext.angleBetweenPoints(startNext);
+
+        double dif_angle=angle2-angle3;
+        if(dif_angle>180)
+                dif_angle-=360;
+        else if(dif_angle<-180)
+                dif_angle+=360;
+        
+        if(((angle3/10)*(angle2/10))<0)
+                dif_angle=-dif_angle;
+
+        int TURN = (dif_angle) < 0 ? 0 : 1;
+
+        //push in reverse order
+        moves.push_front(TURN);
+        moves.push_front(fabs(dif_angle));
+
+        dif_angle=angle1-angle2;
+        if(dif_angle>180)
+                dif_angle-=360;
+        else if(dif_angle<-180)
+                dif_angle+=360;
+
+        if(((angle1/10)*(angle2/10))<0)
+                dif_angle=-dif_angle;
+
+        TURN = (dif_angle) < 0 ? 0 : 1;
+        double distance=endCur.distance(startNext);
+
+        moves.push_front(distance);
+
+        moves.push_front(2);
+        moves.push_front(0);
+        moves.push_front(0);
+
+        moves.push_front(TURN);
+        moves.push_front(fabs(dif_angle));
+
+        return moves;
+}
+\end{DoxyCode}
+\hypertarget{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}{
+\index{Main.cpp@{Main.cpp}!sample@{sample}}
+\index{sample@{sample}!Main.cpp@{Main.cpp}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}void sample (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ imgfile, }
+\item[{IplImage $\ast$}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}
+
+
+Apply median filter to smooth
+
+Red boundary detection make all pixles which are outside the red boundary white.
+
+Thresholding according to grey scale
+
+Thinning the thresholded image
+
+Generate vectors and do further processing
+
+
+
+Definition at line 234 of file Main.cpp.
+
+
+\begin{DoxyCode}
+{
+//  IplImage* img = 0; 
+  int height,width,step,channels;
+  char *data;
+  int i;
+
+  // load an image  
+  img=cvLoadImage(imgfile);
+  if(!img)
+  {
+    printf("Could not load image file: %s\n",imgfile);
+    exit(0);
+  }
+
+  // get the image data
+  height    = img->height;
+  width     = img->width;
+  step      = img->widthStep;
+  channels  = img->nChannels;
+  data      = img->imageData;
+
+  //defining global variables 
+  h=height;
+  w=width;
+
+  printf("Processing a %dx%d image with %d channels\n",height,width,channels); 
+  cout<<"\n\n height "<<height<<"\nwidth "<<width<<"\nwidthStep "<<step<<"\nChann
+      el "<<channels;
+
+  // create a window
+  cvNamedWindow("mainWin", CV_WINDOW_AUTOSIZE); 
+  cvMoveWindow("mainWin", 100, 100);
+
+  mat=new char*[height+1];
+        for(i=0;i<height+1;i++)
+                mat[i]=new char[width+1];
+
+  cvSmooth(img,img,CV_MEDIAN);// display ("mainWinSmooth",img);
+  
+  BoundaryDetection(img,140,60,60);
+
+  Thresholding(img,100);//   display ("mainWinThes", img );
+
+  Thinning(img,mat);// 
+  display("mainWinThinned", img );
+
+
+  list<point> endPoints = StartPoints(img,mat);
+
+  vectorGeneration(imgfile, img, endPoints);
+
+  //release all resouces that were taken
+  cvReleaseImage(&img );
+}
+\end{DoxyCode}
+\hypertarget{_main_8cpp_aacd29bb3b4818090616c01a558e13add}{
+\index{Main.cpp@{Main.cpp}!show\_\-vector\_\-image@{show\_\-vector\_\-image}}
+\index{show\_\-vector\_\-image@{show\_\-vector\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{show\_\-vector\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void show\_\-vector\_\-image (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_aacd29bb3b4818090616c01a558e13add}
+\hypertarget{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}{
+\index{Main.cpp@{Main.cpp}!show\_\-vector\_\-image@{show\_\-vector\_\-image}}
+\index{show\_\-vector\_\-image@{show\_\-vector\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{show\_\-vector\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void show\_\-vector\_\-image (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path, }
+\item[{char $\ast$}]{ imgfile, }
+\item[{IplImage $\ast$}]{ img1}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}
+Show the vector image drawm 
+
+Definition at line 19 of file Main.cpp.
+
+
+\begin{DoxyCode}
+{
+
+        cout << "Showing vector image\n";
+        IplImage* img=cvLoadImage(imgfile);
+        
+        if (img==0)
+        {
+                cout << "Can not open output file to show extracted vector image\
+      n";
+                return;
+        }
+
+        list<point>::iterator it = path.begin();
+        point prev_point = (*it);
+        it++;
+        for (;it!=path.end();it++)
+        {
+                cvLine(img, cvPoint((*it).get_Y(),(*it).get_X()), cvPoint(prev_po
+      int.get_Y(),prev_point.get_X()), cvScalar(0,255,0), 4);
+                cvCircle (img,cvPoint((*it).get_Y(),(*it).get_X()),1,cvScalar (25
+      5,0,0),2);
+                cvCircle (img,cvPoint(prev_point.get_Y(),prev_point.get_X()),1,cv
+      Scalar (255,0,0),2);
+
+                cvLine(img1, cvPoint((*it).get_Y(),(*it).get_X()), cvPoint(prev_p
+      oint.get_Y(),prev_point.get_X()), cvScalar(0,255,0), 4);
+                cvCircle (img1,cvPoint((*it).get_Y(),(*it).get_X()),1,cvScalar (2
+      55,0,0),2);
+                cvCircle (img1,cvPoint(prev_point.get_Y(),prev_point.get_X()),1,c
+      vScalar (255,0,0),2);
+
+                prev_point = *it;
+        }
+        //display("mainWin", img );
+        display("mainWin2", img1 );
+        cvReleaseImage(&img );
+}
+\end{DoxyCode}
+\hypertarget{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}{
+\index{Main.cpp@{Main.cpp}!vectorGeneration@{vectorGeneration}}
+\index{vectorGeneration@{vectorGeneration}!Main.cpp@{Main.cpp}}
+\subsubsection[{vectorGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void vectorGeneration (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ filename, }
+\item[{IplImage $\ast$}]{ img, }
+\item[{list$<$ {\bf point} $>$}]{ endPoints}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}
+Generates vectors from the image 
+
+Definition at line 149 of file Main.cpp.
+
+
+\begin{DoxyCode}
+                                                                           {
+        list<point> path;
+        list<point> refined_path;
+        unsigned int size=endPoints.size();
+        list<double> whole_moves;
+        point lastPoint=point(-1,-1);
+        point lastlastPoint,frontNext;
+
+        while(endPoints.empty()==false)
+        {
+
+
+                point start_point=endPoints.front();
+                endPoints.pop_front();
+                path = traverse_black_line(mat,start_point);
+                endPoints.remove (path.back());
+                
+                if(path.size()==1)
+                        continue;
+
+
+                refined_path = appriximate_straight_line(path,8);
+                //cout << "\n\n\n 2nd refine \n\n";
+                refined_path = appriximate_straight_line(refined_path,1);
+                //create_refined_file (refined_path);
+                if (refined_path.size()<=1)
+                        continue;
+
+                show_vector_image(refined_path,filename,img);
+                size=endPoints.size();
+                //cout<<" \n\n\n Size of list"<<size;
+                list<double> moves=find_direction_vector(refined_path);
+
+                frontNext=refined_path.front();
+                refined_path.pop_front();
+                refined_path.push_front(frontNext);
+
+                if(lastPoint.get_X()!=-1)
+                        moves=moveToNextEnd(moves, lastlastPoint, lastPoint, fron
+      tNext, refined_path.front());
+
+                lastPoint=point(refined_path.back());
+
+                refined_path.pop_back();
+                lastlastPoint=refined_path.back();
+
+                if(moves.size()==0)
+                        continue;
+
+
+                list<double>::iterator it;
+                it=moves.begin();
+
+                int i;
+                for(i=0;it!=moves.end();it++,i++)
+                {
+                        whole_moves.push_back ((int)(*it));
+                }
+                
+        }
+
+                int *moves_int=new int[whole_moves.size()];
+
+                list<double>::iterator it;
+                it=whole_moves.begin();
+
+                int i;
+                for(i=0;it!=whole_moves.end();it++,i++)
+                {
+                        moves_int[i]=(int)(*it);
+                        cout<<"\n ";
+                        if (i%3==0)
+                                cout << "DIST ";
+                        else if (i%3==1)
+                                cout <<"ANGLE ";
+                        else if (i%3==2)
+                                cout <<"DIRECTION ";
+                        cout<<moves_int[i];
+                }
+                
+                whole_moves.push_back(0);
+                whole_moves.push_back(2);
+                writeOnBot(moves_int,whole_moves.size());
+
+}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}{
+\index{Main.cpp@{Main.cpp}!mat@{mat}}
+\index{mat@{mat}!Main.cpp@{Main.cpp}}
+\subsubsection[{mat}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf mat}}}
+\label{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}
+Global variable to maintain the image matrix 
+
+Definition at line 8 of file Main.cpp.
+

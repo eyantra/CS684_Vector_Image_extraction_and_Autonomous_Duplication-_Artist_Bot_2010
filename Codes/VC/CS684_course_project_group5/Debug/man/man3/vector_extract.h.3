@@ -1,0 +1,181 @@
+.TH "vector_extract.h" 3 "Mon Nov 8 2010" "Version 1" "CS684_course_project_group5" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vector_extract.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPI\fP   3.14159265"
+.br
+.ti -1c
+.RI "#define \fBMAX_HOP\fP   4"
+.br
+.ti -1c
+.RI "#define \fBHEIGHT\fP   \fBh\fP"
+.br
+.ti -1c
+.RI "#define \fBWIDTH\fP   \fBw\fP"
+.br
+.ti -1c
+.RI "#define \fBTHRESH_M\fP   0.7"
+.br
+.ti -1c
+.RI "#define \fBTHRESH_ANGLE\fP   10"
+.br
+.ti -1c
+.RI "#define \fBLONG_DISTANCE_THRESH\fP   100"
+.br
+.ti -1c
+.RI "#define \fBnull\fP   '\\0'"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBRIGHT\fP, \fBLEFT\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBpoint\fP \fBfind_neighbour\fP (char **, \fBpoint\fP)"
+.br
+.ti -1c
+.RI "list< \fBpoint\fP > \fBtraverse_black_line\fP (char **, \fBpoint\fP)"
+.br
+.ti -1c
+.RI "void \fBdisplay_image\fP (char **)"
+.br
+.ti -1c
+.RI "char ** \fBmark_as_visited\fP (char **, \fBpoint\fP, \fBpoint\fP)"
+.br
+.ti -1c
+.RI "list< \fBpoint\fP > \fBappriximate_straight_line\fP (list< \fBpoint\fP >, int)"
+.br
+.ti -1c
+.RI "list< double > \fBfind_direction_vector\fP (list< \fBpoint\fP >)"
+.br
+.ti -1c
+.RI "double \fBtan_inverse\fP (double)"
+.br
+.ti -1c
+.RI "list< \fBpoint\fP > \fBStartPoints\fP (IplImage *, char **)"
+.br
+.ti -1c
+.RI "bool \fBfilter1\fP (char **, int, int)"
+.br
+.ti -1c
+.RI "void \fBdisplay_image\fP (IplImage *img)"
+.br
+.ti -1c
+.RI "void \fBcreate_refined_file\fP (list< \fBpoint\fP > path)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBh\fP"
+.br
+.ti -1c
+.RI "int \fBw\fP"
+.br
+.ti -1c
+.RI "enum  { ... }  \fBTURN\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define HEIGHT   \fBh\fP"
+.PP
+Definition at line 3 of file vector_extract.h.
+.SS "#define LONG_DISTANCE_THRESH   100"
+.PP
+Definition at line 7 of file vector_extract.h.
+.SS "#define MAX_HOP   4"
+.PP
+Definition at line 2 of file vector_extract.h.
+.SS "#define null   '\\0'"
+.PP
+Definition at line 8 of file vector_extract.h.
+.SS "#define PI   3.14159265"
+.PP
+Definition at line 1 of file vector_extract.h.
+.SS "#define THRESH_ANGLE   10"
+.PP
+Definition at line 6 of file vector_extract.h.
+.SS "#define THRESH_M   0.7"
+.PP
+Definition at line 5 of file vector_extract.h.
+.SS "#define WIDTH   \fBw\fP"
+.PP
+Definition at line 4 of file vector_extract.h.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "anonymous enum"
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIRIGHT \fP\fP
+.TP
+\fB\fILEFT \fP\fP
+
+.PP
+Definition at line 16 of file vector_extract.h.
+.SH "Function Documentation"
+.PP 
+.SS "list< \fBpoint\fP > appriximate_straight_line (list< \fBpoint\fP > path, int long_distance_thresh)"
+.PP
+Definition at line 199 of file vector_extract.h.
+.SS "void create_refined_file (list< \fBpoint\fP > path)"summary> returns true if the center of the filter is the end of a line segment Else return false /summary> 
+.PP
+Definition at line 259 of file vector_extract.h.
+.SS "void display_image (IplImage * img)"summary> Function to find K hop neighbour. Maximum value of K is MAX_HOP /summary> 
+.PP
+Definition at line 87 of file vector_extract.h.
+.SS "void display_image (char ** image)"
+.PP
+Definition at line 73 of file vector_extract.h.
+.SS "bool filter1 (char ** mat, int i, int j)"summary> all pixels where 0 occues between src and dest are changed to 2. This is due to mark them as already visited and not to interfere with future calculation. /summary>
+.PP
+summary> Locate end points Returns a list of end points /summary> 
+.PP
+Definition at line 277 of file vector_extract.h.
+.SS "list< double > find_direction_vector (list< \fBpoint\fP > path)"
+.PP
+Definition at line 365 of file vector_extract.h.
+.SS "\fBpoint\fP find_neighbour (char ** image, \fBpoint\fP current)"summary> Traverse the black line from the start_point given to another end point /summary> 
+.PP
+Definition at line 118 of file vector_extract.h.
+.SS "char ** mark_as_visited (char ** image, \fBpoint\fP src, \fBpoint\fP dest)"
+.PP
+Definition at line 32 of file vector_extract.h.
+.SS "list< \fBpoint\fP > StartPoints (IplImage * img, char ** mat)"summary> Give the angle in degree for a given slope /summary> 
+.PP
+Definition at line 307 of file vector_extract.h.
+.SS "double tan_inverse (double slope)"summary> Give the direction vector for a given path Its a consecutive instruction of forward and the turn by a specific amount of angle 1 -> turn right 0 -> turn left /summary> 
+.PP
+Definition at line 347 of file vector_extract.h.
+.SS "list< \fBpoint\fP > traverse_black_line (char ** image, \fBpoint\fP start_point)"summary> Returns the vectors constructed from the given path /summary> 
+.PP
+Definition at line 161 of file vector_extract.h.
+.SH "Variable Documentation"
+.PP 
+.SS "int \fBh\fP"
+.PP
+Definition at line 12 of file vector_extract.h.
+.SS "enum { ... }  \fBTURN\fP"
+.SS "int \fBw\fP"
+.PP
+Definition at line 12 of file vector_extract.h.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CS684_course_project_group5 from the source code.

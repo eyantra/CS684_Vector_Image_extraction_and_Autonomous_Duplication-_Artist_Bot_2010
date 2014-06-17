@@ -1,0 +1,345 @@
+\hypertarget{vector__extract_8h}{
+\section{vector\_\-extract.h File Reference}
+\label{vector__extract_8h}\index{vector\_\-extract.h@{vector\_\-extract.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vector__extract_8h_a598a3330b3c21701223ee0ca14316eca}{PI}~3.14159265
+\item 
+\#define \hyperlink{vector__extract_8h_a793f3b8c7d83ca5b0e8f924d49f981af}{MAX\_\-HOP}~4
+\item 
+\#define \hyperlink{vector__extract_8h_aed89bd71aee8be823e8a20ec4e093c1e}{HEIGHT}~\hyperlink{vector__extract_8h_a16611451551e3d15916bae723c3f59f7}{h}
+\item 
+\#define \hyperlink{vector__extract_8h_a241aeeb764887ae5e3de58b98f04b16d}{WIDTH}~\hyperlink{vector__extract_8h_aac374e320caaadeca4874add33b62af2}{w}
+\item 
+\#define \hyperlink{vector__extract_8h_a399d0844f7897dabdb4dcf2a7c46c5c2}{THRESH\_\-M}~0.7
+\item 
+\#define \hyperlink{vector__extract_8h_a327ef6d1c60bd433befc88be1242ddcf}{THRESH\_\-ANGLE}~10
+\item 
+\#define \hyperlink{vector__extract_8h_a8bd10eb4820d8a4044dcf6c06bd9a7d4}{LONG\_\-DISTANCE\_\-THRESH}~100
+\item 
+\#define \hyperlink{vector__extract_8h_ac97b8ee753e4405397a42ad5799b0f9e}{null}~'$\backslash$0'
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55baec8379af7490bb9eaaf579cf17876f38}{RIGHT}, 
+\hyperlink{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55badb45120aafd37a973140edee24708065}{LEFT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpoint}{point} \hyperlink{vector__extract_8h_a675df525f897ffc3452f254089f37516}{find\_\-neighbour} (char $\ast$$\ast$, \hyperlink{classpoint}{point})
+\item 
+list$<$ \hyperlink{classpoint}{point} $>$ \hyperlink{vector__extract_8h_a9dd7ffba175a0f077970f21491961148}{traverse\_\-black\_\-line} (char $\ast$$\ast$, \hyperlink{classpoint}{point})
+\item 
+void \hyperlink{vector__extract_8h_af235a6f4bd0ec9a1225c9535950cec32}{display\_\-image} (char $\ast$$\ast$)
+\item 
+char $\ast$$\ast$ \hyperlink{vector__extract_8h_a59c1a4c92aad98d3350fda9f4e745f74}{mark\_\-as\_\-visited} (char $\ast$$\ast$, \hyperlink{classpoint}{point}, \hyperlink{classpoint}{point})
+\item 
+list$<$ \hyperlink{classpoint}{point} $>$ \hyperlink{vector__extract_8h_a95fb0633c7621b0578fbaaae27c7937b}{appriximate\_\-straight\_\-line} (list$<$ \hyperlink{classpoint}{point} $>$, int)
+\item 
+list$<$ double $>$ \hyperlink{vector__extract_8h_ac0516c1899db400fb0b0556ac60da454}{find\_\-direction\_\-vector} (list$<$ \hyperlink{classpoint}{point} $>$)
+\item 
+double \hyperlink{vector__extract_8h_a276de2fdd66caf103e17bdf1c16bbb28}{tan\_\-inverse} (double)
+\item 
+list$<$ \hyperlink{classpoint}{point} $>$ \hyperlink{vector__extract_8h_aad93ba4710ade791418ffe0dc686baac}{StartPoints} (IplImage $\ast$, char $\ast$$\ast$)
+\item 
+bool \hyperlink{vector__extract_8h_a4238a2851583da1b12b90cf76071257c}{filter1} (char $\ast$$\ast$, int, int)
+\item 
+void \hyperlink{vector__extract_8h_ad245f64435f34ca17ba42def5902327d}{display\_\-image} (IplImage $\ast$img)
+\item 
+void \hyperlink{vector__extract_8h_ae4e63cf4ca8142074986fbf49619113d}{create\_\-refined\_\-file} (list$<$ \hyperlink{classpoint}{point} $>$ path)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{vector__extract_8h_a16611451551e3d15916bae723c3f59f7}{h}
+\item 
+int \hyperlink{vector__extract_8h_aac374e320caaadeca4874add33b62af2}{w}
+\item 
+enum  \{ ... \}  \hyperlink{vector__extract_8h_a0bf987e9977ab76c2bb626ca0f1bede1}{TURN}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{vector__extract_8h_aed89bd71aee8be823e8a20ec4e093c1e}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{HEIGHT}]{\setlength{\rightskip}{0pt plus 5cm}\#define HEIGHT~{\bf h}}}
+\label{vector__extract_8h_aed89bd71aee8be823e8a20ec4e093c1e}
+
+
+Definition at line 3 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a8bd10eb4820d8a4044dcf6c06bd9a7d4}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!LONG\_\-DISTANCE\_\-THRESH@{LONG\_\-DISTANCE\_\-THRESH}}
+\index{LONG\_\-DISTANCE\_\-THRESH@{LONG\_\-DISTANCE\_\-THRESH}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{LONG\_\-DISTANCE\_\-THRESH}]{\setlength{\rightskip}{0pt plus 5cm}\#define LONG\_\-DISTANCE\_\-THRESH~100}}
+\label{vector__extract_8h_a8bd10eb4820d8a4044dcf6c06bd9a7d4}
+
+
+Definition at line 7 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a793f3b8c7d83ca5b0e8f924d49f981af}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!MAX\_\-HOP@{MAX\_\-HOP}}
+\index{MAX\_\-HOP@{MAX\_\-HOP}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{MAX\_\-HOP}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-HOP~4}}
+\label{vector__extract_8h_a793f3b8c7d83ca5b0e8f924d49f981af}
+
+
+Definition at line 2 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_ac97b8ee753e4405397a42ad5799b0f9e}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!null@{null}}
+\index{null@{null}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{null}]{\setlength{\rightskip}{0pt plus 5cm}\#define null~'$\backslash$0'}}
+\label{vector__extract_8h_ac97b8ee753e4405397a42ad5799b0f9e}
+
+
+Definition at line 8 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a598a3330b3c21701223ee0ca14316eca}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!PI@{PI}}
+\index{PI@{PI}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{PI}]{\setlength{\rightskip}{0pt plus 5cm}\#define PI~3.14159265}}
+\label{vector__extract_8h_a598a3330b3c21701223ee0ca14316eca}
+
+
+Definition at line 1 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a327ef6d1c60bd433befc88be1242ddcf}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!THRESH\_\-ANGLE@{THRESH\_\-ANGLE}}
+\index{THRESH\_\-ANGLE@{THRESH\_\-ANGLE}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{THRESH\_\-ANGLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define THRESH\_\-ANGLE~10}}
+\label{vector__extract_8h_a327ef6d1c60bd433befc88be1242ddcf}
+
+
+Definition at line 6 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a399d0844f7897dabdb4dcf2a7c46c5c2}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!THRESH\_\-M@{THRESH\_\-M}}
+\index{THRESH\_\-M@{THRESH\_\-M}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{THRESH\_\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define THRESH\_\-M~0.7}}
+\label{vector__extract_8h_a399d0844f7897dabdb4dcf2a7c46c5c2}
+
+
+Definition at line 5 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a241aeeb764887ae5e3de58b98f04b16d}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{WIDTH}]{\setlength{\rightskip}{0pt plus 5cm}\#define WIDTH~{\bf w}}}
+\label{vector__extract_8h_a241aeeb764887ae5e3de58b98f04b16d}
+
+
+Definition at line 4 of file vector\_\-extract.h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55b}{
+\subsubsection[{"@0}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}
+\label{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55b}
+\begin{Desc}
+\item[Enumerator: ]\par
+\begin{description}
+\index{RIGHT@{RIGHT}!vector\_\-extract.h@{vector\_\-extract.h}}\index{vector\_\-extract.h@{vector\_\-extract.h}!RIGHT@{RIGHT}}\item[{\em 
+\hypertarget{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55baec8379af7490bb9eaaf579cf17876f38}{
+RIGHT}
+\label{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55baec8379af7490bb9eaaf579cf17876f38}
+}]\index{LEFT@{LEFT}!vector\_\-extract.h@{vector\_\-extract.h}}\index{vector\_\-extract.h@{vector\_\-extract.h}!LEFT@{LEFT}}\item[{\em 
+\hypertarget{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55badb45120aafd37a973140edee24708065}{
+LEFT}
+\label{vector__extract_8h_a06fc87d81c62e9abb8790b6e5713c55badb45120aafd37a973140edee24708065}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 16 of file vector\_\-extract.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{vector__extract_8h_a95fb0633c7621b0578fbaaae27c7937b}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!appriximate\_\-straight\_\-line@{appriximate\_\-straight\_\-line}}
+\index{appriximate\_\-straight\_\-line@{appriximate\_\-straight\_\-line}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{appriximate\_\-straight\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf point} $>$ appriximate\_\-straight\_\-line (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path, }
+\item[{int}]{ long\_\-distance\_\-thresh}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a95fb0633c7621b0578fbaaae27c7937b}
+
+
+Definition at line 199 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_ae4e63cf4ca8142074986fbf49619113d}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!create\_\-refined\_\-file@{create\_\-refined\_\-file}}
+\index{create\_\-refined\_\-file@{create\_\-refined\_\-file}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{create\_\-refined\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void create\_\-refined\_\-file (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_ae4e63cf4ca8142074986fbf49619113d}
+summary$>$ returns true if the center of the filter is the end of a line segment Else return false /summary$>$ 
+
+Definition at line 259 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_ad245f64435f34ca17ba42def5902327d}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!display\_\-image@{display\_\-image}}
+\index{display\_\-image@{display\_\-image}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{display\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void display\_\-image (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_ad245f64435f34ca17ba42def5902327d}
+summary$>$ Function to find K hop neighbour. Maximum value of K is MAX\_\-HOP /summary$>$ 
+
+Definition at line 87 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_af235a6f4bd0ec9a1225c9535950cec32}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!display\_\-image@{display\_\-image}}
+\index{display\_\-image@{display\_\-image}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{display\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void display\_\-image (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ image}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_af235a6f4bd0ec9a1225c9535950cec32}
+
+
+Definition at line 73 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a4238a2851583da1b12b90cf76071257c}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!filter1@{filter1}}
+\index{filter1@{filter1}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{filter1}]{\setlength{\rightskip}{0pt plus 5cm}bool filter1 (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ mat, }
+\item[{int}]{ i, }
+\item[{int}]{ j}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a4238a2851583da1b12b90cf76071257c}
+summary$>$ all pixels where 0 occues between src and dest are changed to 2. This is due to mark them as already visited and not to interfere with future calculation. /summary$>$
+
+summary$>$ Locate end points Returns a list of end points /summary$>$ 
+
+Definition at line 277 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_ac0516c1899db400fb0b0556ac60da454}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!find\_\-direction\_\-vector@{find\_\-direction\_\-vector}}
+\index{find\_\-direction\_\-vector@{find\_\-direction\_\-vector}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{find\_\-direction\_\-vector}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ double $>$ find\_\-direction\_\-vector (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_ac0516c1899db400fb0b0556ac60da454}
+
+
+Definition at line 365 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a675df525f897ffc3452f254089f37516}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!find\_\-neighbour@{find\_\-neighbour}}
+\index{find\_\-neighbour@{find\_\-neighbour}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{find\_\-neighbour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf point} find\_\-neighbour (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ image, }
+\item[{{\bf point}}]{ current}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a675df525f897ffc3452f254089f37516}
+summary$>$ Traverse the black line from the start\_\-point given to another end point /summary$>$ 
+
+Definition at line 118 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a59c1a4c92aad98d3350fda9f4e745f74}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!mark\_\-as\_\-visited@{mark\_\-as\_\-visited}}
+\index{mark\_\-as\_\-visited@{mark\_\-as\_\-visited}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{mark\_\-as\_\-visited}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$$\ast$ mark\_\-as\_\-visited (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ image, }
+\item[{{\bf point}}]{ src, }
+\item[{{\bf point}}]{ dest}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a59c1a4c92aad98d3350fda9f4e745f74}
+
+
+Definition at line 32 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_aad93ba4710ade791418ffe0dc686baac}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!StartPoints@{StartPoints}}
+\index{StartPoints@{StartPoints}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{StartPoints}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf point} $>$ StartPoints (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{char $\ast$$\ast$}]{ mat}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_aad93ba4710ade791418ffe0dc686baac}
+summary$>$ Give the angle in degree for a given slope /summary$>$ 
+
+Definition at line 307 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a276de2fdd66caf103e17bdf1c16bbb28}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!tan\_\-inverse@{tan\_\-inverse}}
+\index{tan\_\-inverse@{tan\_\-inverse}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{tan\_\-inverse}]{\setlength{\rightskip}{0pt plus 5cm}double tan\_\-inverse (
+\begin{DoxyParamCaption}
+\item[{double}]{ slope}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a276de2fdd66caf103e17bdf1c16bbb28}
+summary$>$ Give the direction vector for a given path Its a consecutive instruction of forward and the turn by a specific amount of angle 1 -\/$>$ turn right 0 -\/$>$ turn left /summary$>$ 
+
+Definition at line 347 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a9dd7ffba175a0f077970f21491961148}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!traverse\_\-black\_\-line@{traverse\_\-black\_\-line}}
+\index{traverse\_\-black\_\-line@{traverse\_\-black\_\-line}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{traverse\_\-black\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf point} $>$ traverse\_\-black\_\-line (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{ image, }
+\item[{{\bf point}}]{ start\_\-point}
+\end{DoxyParamCaption}
+)}}
+\label{vector__extract_8h_a9dd7ffba175a0f077970f21491961148}
+summary$>$ Returns the vectors constructed from the given path /summary$>$ 
+
+Definition at line 161 of file vector\_\-extract.h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{vector__extract_8h_a16611451551e3d15916bae723c3f59f7}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!h@{h}}
+\index{h@{h}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{h}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf h}}}
+\label{vector__extract_8h_a16611451551e3d15916bae723c3f59f7}
+
+
+Definition at line 12 of file vector\_\-extract.h.
+
+\hypertarget{vector__extract_8h_a0bf987e9977ab76c2bb626ca0f1bede1}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!TURN@{TURN}}
+\index{TURN@{TURN}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{TURN}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}  {\bf TURN}}}
+\label{vector__extract_8h_a0bf987e9977ab76c2bb626ca0f1bede1}
+\hypertarget{vector__extract_8h_aac374e320caaadeca4874add33b62af2}{
+\index{vector\_\-extract.h@{vector\_\-extract.h}!w@{w}}
+\index{w@{w}!vector_extract.h@{vector\_\-extract.h}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf w}}}
+\label{vector__extract_8h_aac374e320caaadeca4874add33b62af2}
+
+
+Definition at line 12 of file vector\_\-extract.h.
+

@@ -1,0 +1,94 @@
+.TH "Main.cpp" 3 "Mon Nov 8 2010" "Version 1" "CS684_course_project_group5" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'includes.h'\fP
+.br
+
+.SS "Defines"
+
+.in +1c
+.ti -1c
+.RI "#define \fBnull\fP   '\\0'"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcapture_image\fP (char *)"
+.br
+.ti -1c
+.RI "void \fBvectorGeneration\fP (char *, IplImage *, list< \fBpoint\fP >)"
+.br
+.ti -1c
+.RI "void \fBsample\fP (char *, IplImage *)"
+.br
+.ti -1c
+.RI "void \fBshow_vector_image\fP (list< \fBpoint\fP >)"
+.br
+.ti -1c
+.RI "void \fBshow_vector_image\fP (list< \fBpoint\fP > path, char *imgfile, IplImage *img1)"
+.br
+.ti -1c
+.RI "list< double > \fBmoveToNextEnd\fP (list< double > moves, \fBpoint\fP prev_endCur, \fBpoint\fP endCur, \fBpoint\fP startNext, \fBpoint\fP next_startNext)"
+.br
+.ti -1c
+.RI "int \fBmain\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char ** \fBmat\fP"
+.br
+.in -1c
+.SH "Define Documentation"
+.PP 
+.SS "#define null   '\\0'"summary> Global variable to maintain the image matrix /summary> 
+.PP
+Definition at line 2 of file Main.cpp.
+.SH "Function Documentation"
+.PP 
+.SS "void capture_image (char * filemane)"summary> Moves the BOT to the next end point /summary> 
+.PP
+Definition at line 54 of file Main.cpp.
+.SS "int main ()"
+.PP
+Definition at line 305 of file Main.cpp.
+.SS "list<double> moveToNextEnd (list< double > moves, \fBpoint\fP prev_endCur, \fBpoint\fP endCur, \fBpoint\fP startNext, \fBpoint\fP next_startNext)"summary> Generates vectors from the image /summary> 
+.PP
+Definition at line 100 of file Main.cpp.
+.SS "void sample (char * imgfile, IplImage * img)"
+.PP
+Apply median filter to smooth /summary>
+.PP
+Red boundary detection make all pixles which are outside the red boundary white. /summary>
+.PP
+Thresholding according to grey scale /summary>
+.PP
+Thinning the thresholded image /summary>
+.PP
+Generate vectors and do further processing /summary> 
+.PP
+Definition at line 234 of file Main.cpp.
+.SS "void show_vector_image (list< \fBpoint\fP >)"summary> Show the vector image drawm /summary> 
+.SS "void show_vector_image (list< \fBpoint\fP > path, char * imgfile, IplImage * img1)"summary> Capture image from webcam /summary> 
+.PP
+Definition at line 19 of file Main.cpp.
+.SS "void vectorGeneration (char * filename, IplImage * img, list< \fBpoint\fP > endPoints)"
+.PP
+Definition at line 149 of file Main.cpp.
+.SH "Variable Documentation"
+.PP 
+.SS "char** \fBmat\fP"
+.PP
+Definition at line 8 of file Main.cpp.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CS684_course_project_group5 from the source code.

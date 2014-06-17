@@ -1,0 +1,127 @@
+\hypertarget{operations_8h}{
+\section{operations.h File Reference}
+\label{operations_8h}\index{operations.h@{operations.h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{operations_8h_a635cd1f9842f6b23d2573166f06a589c}{display} (char $\ast$, IplImage $\ast$)
+\item 
+void \hyperlink{operations_8h_a68834e99f1f75a83b918c383fd68487f}{write2file} (short $\ast$$\ast$, int, int, char $\ast$)
+\item 
+void \hyperlink{operations_8h_a054c3e82fa39265684b69e272e5dc830}{Thinning} (IplImage $\ast$, char $\ast$$\ast$)
+\item 
+void \hyperlink{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}{Thresholding} (IplImage $\ast$, int)
+\item 
+void \hyperlink{operations_8h_a3fd75b449f2af941a46648d9e334a95f}{crop} (IplImage $\ast$, \hyperlink{classpoint}{point} $\ast$, \hyperlink{classpoint}{point} $\ast$, int)
+\item 
+void \hyperlink{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}{BoundaryDetection} (IplImage $\ast$, int, int, int)
+\item 
+list$<$ \hyperlink{classpoint}{point} $>$ \hyperlink{operations_8h_ac81f970014a4904a8467d53d64434d84}{joining\_\-collinear\_\-points} (list$<$ \hyperlink{classpoint}{point} $>$ path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}{
+\index{operations.h@{operations.h}!BoundaryDetection@{BoundaryDetection}}
+\index{BoundaryDetection@{BoundaryDetection}!operations.h@{operations.h}}
+\subsubsection[{BoundaryDetection}]{\setlength{\rightskip}{0pt plus 5cm}void BoundaryDetection (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{int}]{ red\_\-threshold, }
+\item[{int}]{ green\_\-thres, }
+\item[{int}]{ blue\_\-thres}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}
+summary$>$ Displays the image img in the window specified /summary$>$ 
+
+Definition at line 357 of file operations.h.
+
+\hypertarget{operations_8h_a3fd75b449f2af941a46648d9e334a95f}{
+\index{operations.h@{operations.h}!crop@{crop}}
+\index{crop@{crop}!operations.h@{operations.h}}
+\subsubsection[{crop}]{\setlength{\rightskip}{0pt plus 5cm}void crop (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{{\bf point} $\ast$}]{ p1, }
+\item[{{\bf point} $\ast$}]{ p2, }
+\item[{int}]{ red\_\-threshold}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a3fd75b449f2af941a46648d9e334a95f}
+summary$>$ Detects the red rectangle and crops the image accordingly /summary$>$ 
+
+Definition at line 327 of file operations.h.
+
+\hypertarget{operations_8h_a635cd1f9842f6b23d2573166f06a589c}{
+\index{operations.h@{operations.h}!display@{display}}
+\index{display@{display}!operations.h@{operations.h}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ window\_\-name, }
+\item[{IplImage $\ast$}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a635cd1f9842f6b23d2573166f06a589c}
+
+
+Definition at line 411 of file operations.h.
+
+\hypertarget{operations_8h_ac81f970014a4904a8467d53d64434d84}{
+\index{operations.h@{operations.h}!joining\_\-collinear\_\-points@{joining\_\-collinear\_\-points}}
+\index{joining\_\-collinear\_\-points@{joining\_\-collinear\_\-points}!operations.h@{operations.h}}
+\subsubsection[{joining\_\-collinear\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf point}$>$ joining\_\-collinear\_\-points (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_ac81f970014a4904a8467d53d64434d84}
+
+
+Definition at line 419 of file operations.h.
+
+\hypertarget{operations_8h_a054c3e82fa39265684b69e272e5dc830}{
+\index{operations.h@{operations.h}!Thinning@{Thinning}}
+\index{Thinning@{Thinning}!operations.h@{operations.h}}
+\subsubsection[{Thinning}]{\setlength{\rightskip}{0pt plus 5cm}void Thinning (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{char $\ast$$\ast$}]{ mat}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a054c3e82fa39265684b69e272e5dc830}
+summary$>$ Converts an image into a binary image according to a given threshold threshold: the given threshold /summary$>$ 
+
+Definition at line 23 of file operations.h.
+
+\hypertarget{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}{
+\index{operations.h@{operations.h}!Thresholding@{Thresholding}}
+\index{Thresholding@{Thresholding}!operations.h@{operations.h}}
+\subsubsection[{Thresholding}]{\setlength{\rightskip}{0pt plus 5cm}void Thresholding (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{int}]{ threshold}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}
+summary$>$ Any pixiel outside the red rectangle is converted to white pixel /summary$>$ 
+
+Definition at line 294 of file operations.h.
+
+\hypertarget{operations_8h_a68834e99f1f75a83b918c383fd68487f}{
+\index{operations.h@{operations.h}!write2file@{write2file}}
+\index{write2file@{write2file}!operations.h@{operations.h}}
+\subsubsection[{write2file}]{\setlength{\rightskip}{0pt plus 5cm}void write2file (
+\begin{DoxyParamCaption}
+\item[{short $\ast$$\ast$}]{ mat, }
+\item[{int}]{ r, }
+\item[{int}]{ c, }
+\item[{char $\ast$}]{ file}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a68834e99f1f75a83b918c383fd68487f}
+summary$>$ Thins a given image /summary$>$ 
+
+Definition at line 9 of file operations.h.
+

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="targetver_8h" kind="file">
+    <compoundname>targetver.h</compoundname>
+    <includedby refid="stdafx_8h" local="yes">stdafx.h</includedby>
+    <invincdepgraph>
+      <node id="78">
+        <label>stdafx.cpp</label>
+        <link refid="stdafx_8cpp"/>
+      </node>
+      <node id="74">
+        <label>stdafx.h</label>
+        <link refid="stdafx_8h"/>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Main.cpp</label>
+        <link refid="_main_8cpp"/>
+      </node>
+      <node id="77">
+        <label>serialPortTest.cpp</label>
+        <link refid="serial_port_test_8cpp"/>
+      </node>
+      <node id="75">
+        <label>includes.h</label>
+        <link refid="includes_8h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>targetver.h</label>
+        <link refid="targetver.h"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="targetver_8h_1ac50762666aa00bd3a4308158510f1748" prot="public" static="no">
+        <name>_WIN32_WINNT</name>
+        <initializer>0x0600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/targetver.h" line="11" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/targetver.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>macros<sp/>define<sp/>the<sp/>minimum<sp/>required<sp/>platform.<sp/><sp/>The<sp/>minimum<sp/>required<sp/>platform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>the<sp/>earliest<sp/>version<sp/>of<sp/>Windows,<sp/>Internet<sp/>Explorer<sp/>etc.<sp/>that<sp/>has<sp/>the<sp/>necessary<sp/>features<sp/>to<sp/>run<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>your<sp/>application.<sp/><sp/>The<sp/>macros<sp/>work<sp/>by<sp/>enabling<sp/>all<sp/>features<sp/>available<sp/>on<sp/>platform<sp/>versions<sp/>up<sp/>to<sp/>and<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>including<sp/>the<sp/>version<sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Modify<sp/>the<sp/>following<sp/>defines<sp/>if<sp/>you<sp/>have<sp/>to<sp/>target<sp/>a<sp/>platform<sp/>prior<sp/>to<sp/>the<sp/>ones<sp/>specified<sp/>below.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Refer<sp/>to<sp/>MSDN<sp/>for<sp/>the<sp/>latest<sp/>info<sp/>on<sp/>corresponding<sp/>values<sp/>for<sp/>different<sp/>platforms.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIN32_WINNT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Specifies<sp/>that<sp/>the<sp/>minimum<sp/>required<sp/>platform<sp/>is<sp/>Windows<sp/>Vista.</highlight></codeline>
+<codeline lineno="11" refid="targetver_8h_1ac50762666aa00bd3a4308158510f1748" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_WIN32_WINNT<sp/>0x0600<sp/><sp/><sp/><sp/><sp/>//<sp/>Change<sp/>this<sp/>to<sp/>the<sp/>appropriate<sp/>value<sp/>to<sp/>target<sp/>other<sp/>versions<sp/>of<sp/>Windows.</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/targetver.h"/>
+  </compounddef>
+</doxygen>

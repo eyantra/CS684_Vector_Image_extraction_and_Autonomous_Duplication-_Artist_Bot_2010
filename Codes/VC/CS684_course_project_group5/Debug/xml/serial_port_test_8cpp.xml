@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="serial_port_test_8cpp" kind="file">
+    <compoundname>serialPortTest.cpp</compoundname>
+    <includes refid="stdafx_8h" local="yes">stdafx.h</includes>
+    <includes local="no">atlstr.h</includes>
+    <incdepgraph>
+      <node id="55">
+        <label>atlstr.h</label>
+      </node>
+      <node id="51">
+        <label>stdafx.h</label>
+        <link refid="stdafx_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>serialPortTest.cpp</label>
+        <link refid="serialPortTest.cpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>targetver.h</label>
+        <link refid="targetver_8h"/>
+      </node>
+      <node id="54">
+        <label>tchar.h</label>
+      </node>
+      <node id="53">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="serial_port_test_8cpp_1ac9ea3b0172ca359ddc5c9617e529bddc" prot="public" static="no" mutable="no">
+        <type>HANDLE</type>
+        <definition>HANDLE hPort</definition>
+        <argsstring></argsstring>
+        <name>hPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" line="7" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="serial_port_test_8cpp_1aa01b320f0d36c587e04ed29dc8466e4b" prot="public" static="no" mutable="no">
+        <type>DWORD</type>
+        <definition>DWORD byteswritten</definition>
+        <argsstring></argsstring>
+        <name>byteswritten</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" line="8" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="serial_port_test_8cpp_1ac77f3ec847c7ea9e019e0bed51dc2559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool serialOpen</definition>
+        <argsstring>(CString PortSpecifier)</argsstring>
+        <name>serialOpen</name>
+        <param>
+          <type>CString</type>
+          <declname>PortSpecifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" line="11" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" bodystart="10" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="serial_port_test_8cpp_1abfc2956d359453f64b351cdecc280cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool WriteComPort</definition>
+        <argsstring>(int number)</argsstring>
+        <name>WriteComPort</name>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" line="34" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="serial_port_test_8cpp_1a840cf0edf5194046c2014606b615c7c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int writeOnBot</definition>
+        <argsstring>(int *moves, int length)</argsstring>
+        <name>writeOnBot</name>
+        <param>
+          <type>int *</type>
+          <declname>moves</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" line="41" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp" bodystart="40" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>serialPortTest.cpp<sp/>:<sp/>Defines<sp/>the<sp/>entry<sp/>point<sp/>for<sp/>the<sp/>console<sp/>application.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stdafx_8h" kindref="compound">stdafx.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;atlstr.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="serial_port_test_8cpp_1ac9ea3b0172ca359ddc5c9617e529bddc" refkind="member"><highlight class="normal">HANDLE<sp/><ref refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kindref="member">hPort</ref>;</highlight></codeline>
+<codeline lineno="8" refid="serial_port_test_8cpp_1aa01b320f0d36c587e04ed29dc8466e4b" refkind="member"><highlight class="normal">DWORD<sp/><ref refid="serialcomm_8h_1aa01b320f0d36c587e04ed29dc8466e4b" kindref="member">byteswritten</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="serial_port_test_8cpp_1ac77f3ec847c7ea9e019e0bed51dc2559" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="serialcomm_8h_1ac77f3ec847c7ea9e019e0bed51dc2559" kindref="member">serialOpen</ref>(CString<sp/>PortSpecifier)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCB<sp/>dcb;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kindref="member">hPort</ref><sp/>=<sp/>CreateFile(</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PortSpecifier,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GENERIC_WRITE,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OPEN_EXISTING,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!GetCommState(<ref refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kindref="member">hPort</ref>,&amp;dcb))</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dcb.BaudRate<sp/>=<sp/>CBR_9600;<sp/></highlight><highlight class="comment">//9600<sp/>Baud</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dcb.ByteSize<sp/>=<sp/>8;<sp/></highlight><highlight class="comment">//8<sp/>data<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dcb.Parity<sp/>=<sp/>NOPARITY;<sp/></highlight><highlight class="comment">//no<sp/>parity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dcb.StopBits<sp/>=<sp/>ONESTOPBIT;<sp/></highlight><highlight class="comment">//1<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!SetCommState(<ref refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kindref="member">hPort</ref>,&amp;dcb))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="serial_port_test_8cpp_1abfc2956d359453f64b351cdecc280cac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="serialcomm_8h_1abfc2956d359453f64b351cdecc280cac" kindref="member">WriteComPort</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number)</highlight><highlight class="comment">//CString<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data[2]<sp/>=<sp/>{number,</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>retVal<sp/>=<sp/>WriteFile(<ref refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kindref="member">hPort</ref>,data,1,&amp;<ref refid="serialcomm_8h_1aa01b320f0d36c587e04ed29dc8466e4b" kindref="member">byteswritten</ref>,NULL);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="serial_port_test_8cpp_1a840cf0edf5194046c2014606b615c7c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="serialcomm_8h_1a840cf0edf5194046c2014606b615c7c7" kindref="member">writeOnBot</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>moves,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length)</highlight><highlight class="comment">//int<sp/>argc,<sp/>_TCHAR*<sp/>argv[])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>input[3];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="serialcomm_8h_1ac77f3ec847c7ea9e019e0bed51dc2559" kindref="member">serialOpen</ref>(</highlight><highlight class="stringliteral">&quot;COM7&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>array[10]<sp/>=<sp/>{10,30,10,-45,15,255};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>list&lt;double&gt;::iterator<sp/>it;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>it=moves.begin();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>for(;it!=moves.end();it++)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;length;i++)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m=moves[i];</highlight><highlight class="comment">//(*it);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WriteComPort(m);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(&quot;\nmove:<sp/>%d&quot;,m);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Sleep(500);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/serialPortTest.cpp"/>
+  </compounddef>
+</doxygen>

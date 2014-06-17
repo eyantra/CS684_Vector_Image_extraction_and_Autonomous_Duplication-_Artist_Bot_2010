@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.2">
+  <compound refid="classpoint" kind="class"><name>point</name>
+    <member refid="classpoint_1ad679b07fb69d55f5ad454d0f1f2891d5" kind="variable"><name>x</name></member>
+    <member refid="classpoint_1a9a82ca9504acabb1e30569f89c805471" kind="variable"><name>y</name></member>
+    <member refid="classpoint_1aa88449134280c0bc569f86fa98785ec0" kind="function"><name>point</name></member>
+    <member refid="classpoint_1a5fe21d4a4539320bf0f5caf1218d31c8" kind="function"><name>point</name></member>
+    <member refid="classpoint_1a1b726e5c7b1c25647d685fe48d9a6e39" kind="function"><name>operator==</name></member>
+    <member refid="classpoint_1a37e9a3ccade55cb6a424888737098571" kind="function"><name>operator!=</name></member>
+    <member refid="classpoint_1a28c43f3dbee6708f604346ec918c0286" kind="function"><name>slope</name></member>
+    <member refid="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" kind="function"><name>angleBetweenPoints</name></member>
+    <member refid="classpoint_1aa1af528ca96a10e9d3a3e6b1af7112ee" kind="function"><name>distance</name></member>
+    <member refid="classpoint_1a58da89079c34bdc898a0ef8117648ae5" kind="function"><name>invalid</name></member>
+    <member refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" kind="function"><name>get_X</name></member>
+    <member refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" kind="function"><name>get_Y</name></member>
+    <member refid="classpoint_1a584a6daa9ea5e8204be3b1a610cee9e1" kind="function"><name>set_X</name></member>
+    <member refid="classpoint_1ad17be1d73dfe1af57d7f2ce25bb05732" kind="function"><name>set_Y</name></member>
+    <member refid="classpoint_1a0b248ae2a8dab47a95f68ffb03f33ede" kind="function"><name>display</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="includes_8h" kind="file"><name>includes.h</name>
+  </compound>
+  <compound refid="_main_8cpp" kind="file"><name>Main.cpp</name>
+    <member refid="_main_8cpp_1ac97b8ee753e4405397a42ad5799b0f9e" kind="define"><name>null</name></member>
+    <member refid="_main_8cpp_1ae67d5856930eb5f4a234a9c0f117666f" kind="variable"><name>mat</name></member>
+    <member refid="_main_8cpp_1a4de54ec7e937db705fb4c85236c8fdd3" kind="function"><name>capture_image</name></member>
+    <member refid="_main_8cpp_1a62d038ed3c1e5abed342e0efda9634c7" kind="function"><name>vectorGeneration</name></member>
+    <member refid="_main_8cpp_1aa60174029c7b7433ab5d57987611e0e4" kind="function"><name>sample</name></member>
+    <member refid="_main_8cpp_1aacd29bb3b4818090616c01a558e13add" kind="function"><name>show_vector_image</name></member>
+    <member refid="_main_8cpp_1a404439f0d9f2c125995deecd26bf22d9" kind="function"><name>show_vector_image</name></member>
+    <member refid="_main_8cpp_1a00ef12e51e9dc321e5e1c4aef786a1a5" kind="function"><name>moveToNextEnd</name></member>
+    <member refid="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="operations_8h" kind="file"><name>operations.h</name>
+    <member refid="operations_8h_1a635cd1f9842f6b23d2573166f06a589c" kind="function"><name>display</name></member>
+    <member refid="operations_8h_1a68834e99f1f75a83b918c383fd68487f" kind="function"><name>write2file</name></member>
+    <member refid="operations_8h_1a054c3e82fa39265684b69e272e5dc830" kind="function"><name>Thinning</name></member>
+    <member refid="operations_8h_1a4c55f58a39a34b26c44d954b7390fe1a" kind="function"><name>Thresholding</name></member>
+    <member refid="operations_8h_1a3fd75b449f2af941a46648d9e334a95f" kind="function"><name>crop</name></member>
+    <member refid="operations_8h_1a46ba61313a62305e1ee2a6ccfcc0190c" kind="function"><name>BoundaryDetection</name></member>
+    <member refid="operations_8h_1ac81f970014a4904a8467d53d64434d84" kind="function"><name>joining_collinear_points</name></member>
+  </compound>
+  <compound refid="point_8h" kind="file"><name>point.h</name>
+    <member refid="point_8h_1a12c2040f25d8e3a7b9e1c2024c618cb6" kind="define"><name>INF</name></member>
+    <member refid="point_8h_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+  </compound>
+  <compound refid="serialcomm_8h" kind="file"><name>serialcomm.h</name>
+    <member refid="serialcomm_8h_1ac9ea3b0172ca359ddc5c9617e529bddc" kind="variable"><name>hPort</name></member>
+    <member refid="serialcomm_8h_1aa01b320f0d36c587e04ed29dc8466e4b" kind="variable"><name>byteswritten</name></member>
+    <member refid="serialcomm_8h_1ac77f3ec847c7ea9e019e0bed51dc2559" kind="function"><name>serialOpen</name></member>
+    <member refid="serialcomm_8h_1abfc2956d359453f64b351cdecc280cac" kind="function"><name>WriteComPort</name></member>
+    <member refid="serialcomm_8h_1a840cf0edf5194046c2014606b615c7c7" kind="function"><name>writeOnBot</name></member>
+  </compound>
+  <compound refid="serial_port_test_8cpp" kind="file"><name>serialPortTest.cpp</name>
+    <member refid="serial_port_test_8cpp_1ac9ea3b0172ca359ddc5c9617e529bddc" kind="variable"><name>hPort</name></member>
+    <member refid="serial_port_test_8cpp_1aa01b320f0d36c587e04ed29dc8466e4b" kind="variable"><name>byteswritten</name></member>
+    <member refid="serial_port_test_8cpp_1ac77f3ec847c7ea9e019e0bed51dc2559" kind="function"><name>serialOpen</name></member>
+    <member refid="serial_port_test_8cpp_1abfc2956d359453f64b351cdecc280cac" kind="function"><name>WriteComPort</name></member>
+    <member refid="serial_port_test_8cpp_1a840cf0edf5194046c2014606b615c7c7" kind="function"><name>writeOnBot</name></member>
+  </compound>
+  <compound refid="stdafx_8cpp" kind="file"><name>stdafx.cpp</name>
+  </compound>
+  <compound refid="stdafx_8h" kind="file"><name>stdafx.h</name>
+  </compound>
+  <compound refid="targetver_8h" kind="file"><name>targetver.h</name>
+    <member refid="targetver_8h_1ac50762666aa00bd3a4308158510f1748" kind="define"><name>_WIN32_WINNT</name></member>
+  </compound>
+  <compound refid="vector__extract_8h" kind="file"><name>vector_extract.h</name>
+    <member refid="vector__extract_8h_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+    <member refid="vector__extract_8h_1a793f3b8c7d83ca5b0e8f924d49f981af" kind="define"><name>MAX_HOP</name></member>
+    <member refid="vector__extract_8h_1aed89bd71aee8be823e8a20ec4e093c1e" kind="define"><name>HEIGHT</name></member>
+    <member refid="vector__extract_8h_1a241aeeb764887ae5e3de58b98f04b16d" kind="define"><name>WIDTH</name></member>
+    <member refid="vector__extract_8h_1a399d0844f7897dabdb4dcf2a7c46c5c2" kind="define"><name>THRESH_M</name></member>
+    <member refid="vector__extract_8h_1a327ef6d1c60bd433befc88be1242ddcf" kind="define"><name>THRESH_ANGLE</name></member>
+    <member refid="vector__extract_8h_1a8bd10eb4820d8a4044dcf6c06bd9a7d4" kind="define"><name>LONG_DISTANCE_THRESH</name></member>
+    <member refid="vector__extract_8h_1ac97b8ee753e4405397a42ad5799b0f9e" kind="define"><name>null</name></member>
+    <member refid="vector__extract_8h_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="vector__extract_8h_1a06fc87d81c62e9abb8790b6e5713c55baec8379af7490bb9eaaf579cf17876f38" kind="enumvalue"><name>RIGHT</name></member>
+    <member refid="vector__extract_8h_1a06fc87d81c62e9abb8790b6e5713c55badb45120aafd37a973140edee24708065" kind="enumvalue"><name>LEFT</name></member>
+    <member refid="vector__extract_8h_1a16611451551e3d15916bae723c3f59f7" kind="variable"><name>h</name></member>
+    <member refid="vector__extract_8h_1aac374e320caaadeca4874add33b62af2" kind="variable"><name>w</name></member>
+    <member refid="vector__extract_8h_1a0bf987e9977ab76c2bb626ca0f1bede1" kind="variable"><name>TURN</name></member>
+    <member refid="vector__extract_8h_1a675df525f897ffc3452f254089f37516" kind="function"><name>find_neighbour</name></member>
+    <member refid="vector__extract_8h_1a9dd7ffba175a0f077970f21491961148" kind="function"><name>traverse_black_line</name></member>
+    <member refid="vector__extract_8h_1af235a6f4bd0ec9a1225c9535950cec32" kind="function"><name>display_image</name></member>
+    <member refid="vector__extract_8h_1a59c1a4c92aad98d3350fda9f4e745f74" kind="function"><name>mark_as_visited</name></member>
+    <member refid="vector__extract_8h_1a95fb0633c7621b0578fbaaae27c7937b" kind="function"><name>appriximate_straight_line</name></member>
+    <member refid="vector__extract_8h_1ac0516c1899db400fb0b0556ac60da454" kind="function"><name>find_direction_vector</name></member>
+    <member refid="vector__extract_8h_1a276de2fdd66caf103e17bdf1c16bbb28" kind="function"><name>tan_inverse</name></member>
+    <member refid="vector__extract_8h_1aad93ba4710ade791418ffe0dc686baac" kind="function"><name>StartPoints</name></member>
+    <member refid="vector__extract_8h_1a4238a2851583da1b12b90cf76071257c" kind="function"><name>filter1</name></member>
+    <member refid="vector__extract_8h_1ad245f64435f34ca17ba42def5902327d" kind="function"><name>display_image</name></member>
+    <member refid="vector__extract_8h_1ae4e63cf4ca8142074986fbf49619113d" kind="function"><name>create_refined_file</name></member>
+  </compound>
+</doxygenindex>

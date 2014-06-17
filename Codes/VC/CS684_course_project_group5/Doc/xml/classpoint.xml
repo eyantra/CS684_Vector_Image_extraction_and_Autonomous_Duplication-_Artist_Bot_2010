@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.2">
+  <compounddef id="classpoint" kind="class" prot="public">
+    <compoundname>point</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpoint_1ad679b07fb69d55f5ad454d0f1f2891d5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int point::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="6" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpoint_1a9a82ca9504acabb1e30569f89c805471" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int point::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="6" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpoint_1aa88449134280c0bc569f86fa98785ec0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>point::point</definition>
+        <argsstring>(int _x, int _y)</argsstring>
+        <name>point</name>
+        <param>
+          <type>int</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="8" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a5fe21d4a4539320bf0f5caf1218d31c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>point::point</definition>
+        <argsstring>()</argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="9" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a1b726e5c7b1c25647d685fe48d9a6e39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool point::operator==</definition>
+        <argsstring>(point p)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="10" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a37e9a3ccade55cb6a424888737098571" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool point::operator!=</definition>
+        <argsstring>(point p)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Calculates slope between p1 and p2 /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="11" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a28c43f3dbee6708f604346ec918c0286" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double point::slope</definition>
+        <argsstring>(point p1)</argsstring>
+        <name>slope</name>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Calculates angle between points /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="17" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="16" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double point::angleBetweenPoints</definition>
+        <argsstring>(point p2)</argsstring>
+        <name>angleBetweenPoints</name>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>p2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Calculates distance between p1 and p2 /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="49" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="48" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1aa1af528ca96a10e9d3a3e6b1af7112ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double point::distance</definition>
+        <argsstring>(point p1)</argsstring>
+        <name>distance</name>
+        <param>
+          <type><ref refid="classpoint" kindref="compound">point</ref></type>
+          <declname>p1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; returns true for (-1,-1) as this indicates an invalid point otherwise return flase /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="87" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="86" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a58da89079c34bdc898a0ef8117648ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool point::invalid</definition>
+        <argsstring>()</argsstring>
+        <name>invalid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="99" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int point::get_X</definition>
+        <argsstring>()</argsstring>
+        <name>get_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="105" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="105" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int point::get_Y</definition>
+        <argsstring>()</argsstring>
+        <name>get_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="106" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a584a6daa9ea5e8204be3b1a610cee9e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void point::set_X</definition>
+        <argsstring>(int x)</argsstring>
+        <name>set_X</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="107" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1ad17be1d73dfe1af57d7f2ce25bb05732" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void point::set_Y</definition>
+        <argsstring>(int y)</argsstring>
+        <name>set_Y</name>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>summary&gt; Displays a point /summary&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="108" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="function" id="classpoint_1a0b248ae2a8dab47a95f68ffb03f33ede" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void point::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="114" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" line="5" bodyfile="C:/Users/Abhirup/Desktop/CS684_course_project_group5/Final_project/CS684_course_project_group5/point.h" bodystart="4" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classpoint_1aac62db6bc3e2f7d35950ffa8789fde18" prot="public" virt="non-virtual"><scope>point</scope><name>angleBetweenPoints</name></member>
+      <member refid="classpoint_1a0b248ae2a8dab47a95f68ffb03f33ede" prot="public" virt="non-virtual"><scope>point</scope><name>display</name></member>
+      <member refid="classpoint_1aa1af528ca96a10e9d3a3e6b1af7112ee" prot="public" virt="non-virtual"><scope>point</scope><name>distance</name></member>
+      <member refid="classpoint_1a3d31b560b17fcf65bea36469e49a6fb4" prot="public" virt="non-virtual"><scope>point</scope><name>get_X</name></member>
+      <member refid="classpoint_1aa8d43ec6f46ac2ab3251bf188df582d9" prot="public" virt="non-virtual"><scope>point</scope><name>get_Y</name></member>
+      <member refid="classpoint_1a58da89079c34bdc898a0ef8117648ae5" prot="public" virt="non-virtual"><scope>point</scope><name>invalid</name></member>
+      <member refid="classpoint_1a37e9a3ccade55cb6a424888737098571" prot="public" virt="non-virtual"><scope>point</scope><name>operator!=</name></member>
+      <member refid="classpoint_1a1b726e5c7b1c25647d685fe48d9a6e39" prot="public" virt="non-virtual"><scope>point</scope><name>operator==</name></member>
+      <member refid="classpoint_1aa88449134280c0bc569f86fa98785ec0" prot="public" virt="non-virtual"><scope>point</scope><name>point</name></member>
+      <member refid="classpoint_1a5fe21d4a4539320bf0f5caf1218d31c8" prot="public" virt="non-virtual"><scope>point</scope><name>point</name></member>
+      <member refid="classpoint_1a584a6daa9ea5e8204be3b1a610cee9e1" prot="public" virt="non-virtual"><scope>point</scope><name>set_X</name></member>
+      <member refid="classpoint_1ad17be1d73dfe1af57d7f2ce25bb05732" prot="public" virt="non-virtual"><scope>point</scope><name>set_Y</name></member>
+      <member refid="classpoint_1a28c43f3dbee6708f604346ec918c0286" prot="public" virt="non-virtual"><scope>point</scope><name>slope</name></member>
+      <member refid="classpoint_1ad679b07fb69d55f5ad454d0f1f2891d5" prot="private" virt="non-virtual"><scope>point</scope><name>x</name></member>
+      <member refid="classpoint_1a9a82ca9504acabb1e30569f89c805471" prot="private" virt="non-virtual"><scope>point</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

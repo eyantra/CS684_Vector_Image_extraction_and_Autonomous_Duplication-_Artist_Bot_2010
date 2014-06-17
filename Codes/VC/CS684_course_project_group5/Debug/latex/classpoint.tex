@@ -1,0 +1,225 @@
+\hypertarget{classpoint}{
+\section{point Class Reference}
+\label{classpoint}\index{point@{point}}
+}
+
+
+{\ttfamily \#include $<$point.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpoint_aa88449134280c0bc569f86fa98785ec0}{point} (int \_\-x, int \_\-y)
+\item 
+\hyperlink{classpoint_a5fe21d4a4539320bf0f5caf1218d31c8}{point} ()
+\item 
+bool \hyperlink{classpoint_a1b726e5c7b1c25647d685fe48d9a6e39}{operator==} (\hyperlink{classpoint}{point} p)
+\item 
+bool \hyperlink{classpoint_a37e9a3ccade55cb6a424888737098571}{operator!=} (\hyperlink{classpoint}{point} p)
+\item 
+double \hyperlink{classpoint_a28c43f3dbee6708f604346ec918c0286}{slope} (\hyperlink{classpoint}{point} p1)
+\item 
+double \hyperlink{classpoint_aac62db6bc3e2f7d35950ffa8789fde18}{angleBetweenPoints} (\hyperlink{classpoint}{point} p2)
+\item 
+double \hyperlink{classpoint_aa1af528ca96a10e9d3a3e6b1af7112ee}{distance} (\hyperlink{classpoint}{point} p1)
+\item 
+bool \hyperlink{classpoint_a58da89079c34bdc898a0ef8117648ae5}{invalid} ()
+\item 
+int \hyperlink{classpoint_a3d31b560b17fcf65bea36469e49a6fb4}{get\_\-X} ()
+\item 
+int \hyperlink{classpoint_aa8d43ec6f46ac2ab3251bf188df582d9}{get\_\-Y} ()
+\item 
+void \hyperlink{classpoint_a584a6daa9ea5e8204be3b1a610cee9e1}{set\_\-X} (int x)
+\item 
+void \hyperlink{classpoint_ad17be1d73dfe1af57d7f2ce25bb05732}{set\_\-Y} (int y)
+\item 
+void \hyperlink{classpoint_a0b248ae2a8dab47a95f68ffb03f33ede}{display} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file point.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpoint_aa88449134280c0bc569f86fa98785ec0}{
+\index{point@{point}!point@{point}}
+\index{point@{point}!point@{point}}
+\subsubsection[{point}]{\setlength{\rightskip}{0pt plus 5cm}point::point (
+\begin{DoxyParamCaption}
+\item[{int}]{ \_\-x, }
+\item[{int}]{ \_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_aa88449134280c0bc569f86fa98785ec0}
+
+
+Definition at line 8 of file point.h.
+
+\hypertarget{classpoint_a5fe21d4a4539320bf0f5caf1218d31c8}{
+\index{point@{point}!point@{point}}
+\index{point@{point}!point@{point}}
+\subsubsection[{point}]{\setlength{\rightskip}{0pt plus 5cm}point::point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a5fe21d4a4539320bf0f5caf1218d31c8}
+
+
+Definition at line 9 of file point.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classpoint_aac62db6bc3e2f7d35950ffa8789fde18}{
+\index{point@{point}!angleBetweenPoints@{angleBetweenPoints}}
+\index{angleBetweenPoints@{angleBetweenPoints}!point@{point}}
+\subsubsection[{angleBetweenPoints}]{\setlength{\rightskip}{0pt plus 5cm}double point::angleBetweenPoints (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{ p2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_aac62db6bc3e2f7d35950ffa8789fde18}
+summary$>$ Calculates distance between p1 and p2 /summary$>$ 
+
+Definition at line 48 of file point.h.
+
+\hypertarget{classpoint_a0b248ae2a8dab47a95f68ffb03f33ede}{
+\index{point@{point}!display@{display}}
+\index{display@{display}!point@{point}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void point::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a0b248ae2a8dab47a95f68ffb03f33ede}
+
+
+Definition at line 113 of file point.h.
+
+\hypertarget{classpoint_aa1af528ca96a10e9d3a3e6b1af7112ee}{
+\index{point@{point}!distance@{distance}}
+\index{distance@{distance}!point@{point}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}double point::distance (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{ p1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_aa1af528ca96a10e9d3a3e6b1af7112ee}
+summary$>$ returns true for (-\/1,-\/1) as this indicates an invalid point otherwise return flase /summary$>$ 
+
+Definition at line 86 of file point.h.
+
+\hypertarget{classpoint_a3d31b560b17fcf65bea36469e49a6fb4}{
+\index{point@{point}!get\_\-X@{get\_\-X}}
+\index{get\_\-X@{get\_\-X}!point@{point}}
+\subsubsection[{get\_\-X}]{\setlength{\rightskip}{0pt plus 5cm}int point::get\_\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a3d31b560b17fcf65bea36469e49a6fb4}
+
+
+Definition at line 105 of file point.h.
+
+\hypertarget{classpoint_aa8d43ec6f46ac2ab3251bf188df582d9}{
+\index{point@{point}!get\_\-Y@{get\_\-Y}}
+\index{get\_\-Y@{get\_\-Y}!point@{point}}
+\subsubsection[{get\_\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int point::get\_\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_aa8d43ec6f46ac2ab3251bf188df582d9}
+
+
+Definition at line 106 of file point.h.
+
+\hypertarget{classpoint_a58da89079c34bdc898a0ef8117648ae5}{
+\index{point@{point}!invalid@{invalid}}
+\index{invalid@{invalid}!point@{point}}
+\subsubsection[{invalid}]{\setlength{\rightskip}{0pt plus 5cm}bool point::invalid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a58da89079c34bdc898a0ef8117648ae5}
+
+
+Definition at line 98 of file point.h.
+
+\hypertarget{classpoint_a37e9a3ccade55cb6a424888737098571}{
+\index{point@{point}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!point@{point}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool point::operator!= (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a37e9a3ccade55cb6a424888737098571}
+summary$>$ Calculates slope between p1 and p2 /summary$>$ 
+
+Definition at line 11 of file point.h.
+
+\hypertarget{classpoint_a1b726e5c7b1c25647d685fe48d9a6e39}{
+\index{point@{point}!operator==@{operator==}}
+\index{operator==@{operator==}!point@{point}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool point::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{ p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a1b726e5c7b1c25647d685fe48d9a6e39}
+
+
+Definition at line 10 of file point.h.
+
+\hypertarget{classpoint_a584a6daa9ea5e8204be3b1a610cee9e1}{
+\index{point@{point}!set\_\-X@{set\_\-X}}
+\index{set\_\-X@{set\_\-X}!point@{point}}
+\subsubsection[{set\_\-X}]{\setlength{\rightskip}{0pt plus 5cm}void point::set\_\-X (
+\begin{DoxyParamCaption}
+\item[{int}]{ x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a584a6daa9ea5e8204be3b1a610cee9e1}
+
+
+Definition at line 107 of file point.h.
+
+\hypertarget{classpoint_ad17be1d73dfe1af57d7f2ce25bb05732}{
+\index{point@{point}!set\_\-Y@{set\_\-Y}}
+\index{set\_\-Y@{set\_\-Y}!point@{point}}
+\subsubsection[{set\_\-Y}]{\setlength{\rightskip}{0pt plus 5cm}void point::set\_\-Y (
+\begin{DoxyParamCaption}
+\item[{int}]{ y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_ad17be1d73dfe1af57d7f2ce25bb05732}
+summary$>$ Displays a point /summary$>$ 
+
+Definition at line 108 of file point.h.
+
+\hypertarget{classpoint_a28c43f3dbee6708f604346ec918c0286}{
+\index{point@{point}!slope@{slope}}
+\index{slope@{slope}!point@{point}}
+\subsubsection[{slope}]{\setlength{\rightskip}{0pt plus 5cm}double point::slope (
+\begin{DoxyParamCaption}
+\item[{{\bf point}}]{ p1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classpoint_a28c43f3dbee6708f604346ec918c0286}
+summary$>$ Calculates angle between points /summary$>$ 
+
+Definition at line 16 of file point.h.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{point_8h}{point.h}\end{DoxyCompactItemize}

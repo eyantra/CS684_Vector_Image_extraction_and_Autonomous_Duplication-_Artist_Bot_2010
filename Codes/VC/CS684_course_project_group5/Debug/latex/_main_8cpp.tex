@@ -1,0 +1,167 @@
+\hypertarget{_main_8cpp}{
+\section{Main.cpp File Reference}
+\label{_main_8cpp}\index{Main.cpp@{Main.cpp}}
+}
+{\ttfamily \#include \char`\"{}includes.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}{null}~'$\backslash$0'
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}{capture\_\-image} (char $\ast$)
+\item 
+void \hyperlink{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}{vectorGeneration} (char $\ast$, IplImage $\ast$, list$<$ \hyperlink{classpoint}{point} $>$)
+\item 
+void \hyperlink{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}{sample} (char $\ast$, IplImage $\ast$)
+\item 
+void \hyperlink{_main_8cpp_aacd29bb3b4818090616c01a558e13add}{show\_\-vector\_\-image} (list$<$ \hyperlink{classpoint}{point} $>$)
+\item 
+void \hyperlink{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}{show\_\-vector\_\-image} (list$<$ \hyperlink{classpoint}{point} $>$ path, char $\ast$imgfile, IplImage $\ast$img1)
+\item 
+list$<$ double $>$ \hyperlink{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}{moveToNextEnd} (list$<$ double $>$ moves, \hyperlink{classpoint}{point} prev\_\-endCur, \hyperlink{classpoint}{point} endCur, \hyperlink{classpoint}{point} startNext, \hyperlink{classpoint}{point} next\_\-startNext)
+\item 
+int \hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \hyperlink{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}{mat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}{
+\index{Main.cpp@{Main.cpp}!null@{null}}
+\index{null@{null}!Main.cpp@{Main.cpp}}
+\subsubsection[{null}]{\setlength{\rightskip}{0pt plus 5cm}\#define null~'$\backslash$0'}}
+\label{_main_8cpp_ac97b8ee753e4405397a42ad5799b0f9e}
+summary$>$ Global variable to maintain the image matrix /summary$>$ 
+
+Definition at line 2 of file Main.cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}{
+\index{Main.cpp@{Main.cpp}!capture\_\-image@{capture\_\-image}}
+\index{capture\_\-image@{capture\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{capture\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void capture\_\-image (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ filemane}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a4de54ec7e937db705fb4c85236c8fdd3}
+summary$>$ Moves the BOT to the next end point /summary$>$ 
+
+Definition at line 54 of file Main.cpp.
+
+\hypertarget{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{
+\index{Main.cpp@{Main.cpp}!main@{main}}
+\index{main@{main}!Main.cpp@{Main.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+Definition at line 305 of file Main.cpp.
+
+\hypertarget{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}{
+\index{Main.cpp@{Main.cpp}!moveToNextEnd@{moveToNextEnd}}
+\index{moveToNextEnd@{moveToNextEnd}!Main.cpp@{Main.cpp}}
+\subsubsection[{moveToNextEnd}]{\setlength{\rightskip}{0pt plus 5cm}list$<$double$>$ moveToNextEnd (
+\begin{DoxyParamCaption}
+\item[{list$<$ double $>$}]{ moves, }
+\item[{{\bf point}}]{ prev\_\-endCur, }
+\item[{{\bf point}}]{ endCur, }
+\item[{{\bf point}}]{ startNext, }
+\item[{{\bf point}}]{ next\_\-startNext}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a00ef12e51e9dc321e5e1c4aef786a1a5}
+summary$>$ Generates vectors from the image /summary$>$ 
+
+Definition at line 100 of file Main.cpp.
+
+\hypertarget{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}{
+\index{Main.cpp@{Main.cpp}!sample@{sample}}
+\index{sample@{sample}!Main.cpp@{Main.cpp}}
+\subsubsection[{sample}]{\setlength{\rightskip}{0pt plus 5cm}void sample (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ imgfile, }
+\item[{IplImage $\ast$}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_aa60174029c7b7433ab5d57987611e0e4}
+
+
+Apply median filter to smooth /summary$>$
+
+Red boundary detection make all pixles which are outside the red boundary white. /summary$>$
+
+Thresholding according to grey scale /summary$>$
+
+Thinning the thresholded image /summary$>$
+
+Generate vectors and do further processing /summary$>$ 
+
+
+
+Definition at line 234 of file Main.cpp.
+
+\hypertarget{_main_8cpp_aacd29bb3b4818090616c01a558e13add}{
+\index{Main.cpp@{Main.cpp}!show\_\-vector\_\-image@{show\_\-vector\_\-image}}
+\index{show\_\-vector\_\-image@{show\_\-vector\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{show\_\-vector\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void show\_\-vector\_\-image (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_aacd29bb3b4818090616c01a558e13add}
+summary$>$ Show the vector image drawm /summary$>$ \hypertarget{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}{
+\index{Main.cpp@{Main.cpp}!show\_\-vector\_\-image@{show\_\-vector\_\-image}}
+\index{show\_\-vector\_\-image@{show\_\-vector\_\-image}!Main.cpp@{Main.cpp}}
+\subsubsection[{show\_\-vector\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}void show\_\-vector\_\-image (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path, }
+\item[{char $\ast$}]{ imgfile, }
+\item[{IplImage $\ast$}]{ img1}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a404439f0d9f2c125995deecd26bf22d9}
+summary$>$ Capture image from webcam /summary$>$ 
+
+Definition at line 19 of file Main.cpp.
+
+\hypertarget{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}{
+\index{Main.cpp@{Main.cpp}!vectorGeneration@{vectorGeneration}}
+\index{vectorGeneration@{vectorGeneration}!Main.cpp@{Main.cpp}}
+\subsubsection[{vectorGeneration}]{\setlength{\rightskip}{0pt plus 5cm}void vectorGeneration (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ filename, }
+\item[{IplImage $\ast$}]{ img, }
+\item[{list$<$ {\bf point} $>$}]{ endPoints}
+\end{DoxyParamCaption}
+)}}
+\label{_main_8cpp_a62d038ed3c1e5abed342e0efda9634c7}
+
+
+Definition at line 149 of file Main.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}{
+\index{Main.cpp@{Main.cpp}!mat@{mat}}
+\index{mat@{mat}!Main.cpp@{Main.cpp}}
+\subsubsection[{mat}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ {\bf mat}}}
+\label{_main_8cpp_ae67d5856930eb5f4a234a9c0f117666f}
+
+
+Definition at line 8 of file Main.cpp.
+

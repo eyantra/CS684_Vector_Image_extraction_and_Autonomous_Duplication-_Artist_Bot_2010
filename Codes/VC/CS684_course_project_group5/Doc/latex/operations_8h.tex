@@ -1,0 +1,599 @@
+\hypertarget{operations_8h}{
+\section{operations.h File Reference}
+\label{operations_8h}\index{operations.h@{operations.h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{operations_8h_a635cd1f9842f6b23d2573166f06a589c}{display} (char $\ast$, IplImage $\ast$)
+\item 
+void \hyperlink{operations_8h_a68834e99f1f75a83b918c383fd68487f}{write2file} (short $\ast$$\ast$, int, int, char $\ast$)
+\item 
+void \hyperlink{operations_8h_a054c3e82fa39265684b69e272e5dc830}{Thinning} (IplImage $\ast$, char $\ast$$\ast$)
+\item 
+void \hyperlink{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}{Thresholding} (IplImage $\ast$, int)
+\item 
+void \hyperlink{operations_8h_a3fd75b449f2af941a46648d9e334a95f}{crop} (IplImage $\ast$, \hyperlink{classpoint}{point} $\ast$, \hyperlink{classpoint}{point} $\ast$, int)
+\item 
+void \hyperlink{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}{BoundaryDetection} (IplImage $\ast$, int, int, int)
+\item 
+list$<$ \hyperlink{classpoint}{point} $>$ \hyperlink{operations_8h_ac81f970014a4904a8467d53d64434d84}{joining\_\-collinear\_\-points} (list$<$ \hyperlink{classpoint}{point} $>$ path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}{
+\index{operations.h@{operations.h}!BoundaryDetection@{BoundaryDetection}}
+\index{BoundaryDetection@{BoundaryDetection}!operations.h@{operations.h}}
+\subsubsection[{BoundaryDetection}]{\setlength{\rightskip}{0pt plus 5cm}void BoundaryDetection (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{int}]{ red\_\-threshold, }
+\item[{int}]{ green\_\-thres, }
+\item[{int}]{ blue\_\-thres}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a46ba61313a62305e1ee2a6ccfcc0190c}
+Detects the red rectangle and crops the image accordingly 
+
+Definition at line 357 of file operations.h.
+
+
+\begin{DoxyCode}
+                                                                                 
+              {
+        int height,width,step,channels;
+        uchar *data;
+
+    // get the image data
+    height    = img->height;
+    width     = img->width;
+    step      = img->widthStep;
+    channels  = img->nChannels;
+    data      = (uchar *)img->imageData;
+        
+        int i,j;
+
+        point p1=point(20,100),p2=point(height-70,width-100);
+        crop(img,&p1,&p2,red_threshold);
+        display("Cropped",img);
+}
+\end{DoxyCode}
+\hypertarget{operations_8h_a3fd75b449f2af941a46648d9e334a95f}{
+\index{operations.h@{operations.h}!crop@{crop}}
+\index{crop@{crop}!operations.h@{operations.h}}
+\subsubsection[{crop}]{\setlength{\rightskip}{0pt plus 5cm}void crop (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{{\bf point} $\ast$}]{ p1, }
+\item[{{\bf point} $\ast$}]{ p2, }
+\item[{int}]{ red\_\-threshold}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a3fd75b449f2af941a46648d9e334a95f}
+Any pixiel outside the red rectangle is converted to white pixel 
+
+Definition at line 327 of file operations.h.
+
+
+\begin{DoxyCode}
+                                                                 {
+        int height,width,step,channels;
+        uchar *data;
+
+    // get the image data
+    height    = img->height;
+    width     = img->width;
+    step      = img->widthStep;
+    channels  = img->nChannels;
+    data      = (uchar *)img->imageData;
+        
+        int i,j,k;
+        
+        p1->display();
+        p2->display();
+        for(i=0;i<height;i++)
+                for(j=0;j<width;j++)
+                for(k=0;k<channels;k++){
+                        if(i<p1->get_X()+35 || i>p2->get_X()-35 || j<p1->get_Y()+
+      35 || j>p2->get_Y()-35)
+                                data[i*step+j*channels+k]=255;
+
+
+                }
+
+}
+\end{DoxyCode}
+\hypertarget{operations_8h_a635cd1f9842f6b23d2573166f06a589c}{
+\index{operations.h@{operations.h}!display@{display}}
+\index{display@{display}!operations.h@{operations.h}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ window\_\-name, }
+\item[{IplImage $\ast$}]{ img}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a635cd1f9842f6b23d2573166f06a589c}
+Displays the image img in the window specified 
+
+Definition at line 379 of file operations.h.
+
+
+\begin{DoxyCode}
+{
+        cvShowImage(window_name, img );
+        cvWaitKey(0);
+}
+\end{DoxyCode}
+\hypertarget{operations_8h_ac81f970014a4904a8467d53d64434d84}{
+\index{operations.h@{operations.h}!joining\_\-collinear\_\-points@{joining\_\-collinear\_\-points}}
+\index{joining\_\-collinear\_\-points@{joining\_\-collinear\_\-points}!operations.h@{operations.h}}
+\subsubsection[{joining\_\-collinear\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}list$<${\bf point}$>$ joining\_\-collinear\_\-points (
+\begin{DoxyParamCaption}
+\item[{list$<$ {\bf point} $>$}]{ path}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_ac81f970014a4904a8467d53d64434d84}
+
+
+Definition at line 387 of file operations.h.
+
+
+\begin{DoxyCode}
+                                                      {
+        list<point>::iterator it=path.begin();
+        list<point> finalPath;
+
+        finalPath.push_back(*it);
+
+        int x1,x2,x3,y1,y2,y3;
+        x1=it->get_X();
+        y1=it->get_Y();
+        it++;
+        int i,size=path.size();
+        for(i=1;i<size-1;){
+                x2=it->get_X();
+                y2=it->get_Y();
+                double m1=((double)(y2-y1))/((double)(x2-x1));
+                const point p=*it;
+                it++;
+                i++;
+                x3=it->get_X();
+                y3=it->get_Y();
+                double m2=((double)(y3-y1))/((double)(x3-x1));
+
+                if( (m2==m1) || (m1==m2) ){
+                }
+                else{
+                        finalPath.push_back(p);
+                        finalPath.push_back(*it);
+                        x1=x2;
+                        y1=y2;
+                }
+
+
+        }
+
+
+        return finalPath;
+}\end{DoxyCode}
+\hypertarget{operations_8h_a054c3e82fa39265684b69e272e5dc830}{
+\index{operations.h@{operations.h}!Thinning@{Thinning}}
+\index{Thinning@{Thinning}!operations.h@{operations.h}}
+\subsubsection[{Thinning}]{\setlength{\rightskip}{0pt plus 5cm}void Thinning (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{char $\ast$$\ast$}]{ mat}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a054c3e82fa39265684b69e272e5dc830}
+Thins a given image 
+
+Definition at line 23 of file operations.h.
+
+
+\begin{DoxyCode}
+{
+//      int height=ImgHeader.image_length,width=ImgHeader.image_width;
+        int height,width,step,channels;
+        uchar *data;
+        short **oldImg, **newImg, **thinImg;
+        int i, j, k;
+        int nChanges;                                   // no. of changes
+        int p, p1, p2, p3, p4,                  // 3X3 window around pixel p
+                p5, p6, p7, p8; 
+        bool remove;
+        
+    // get the image data
+    height    = img->height;
+    width     = img->width;
+    step      = img->widthStep;
+    channels  = img->nChannels;
+    data      = (uchar *)img->imageData;
+
+        short** imgMat;
+        imgMat=new short*[height+1];
+        for(i=0;i<height+1;i++)
+                imgMat[i]=new short[width+1];
+
+        for(i=0;i<height;i++)
+                for(j=0;j<width;j++){
+                        int pix=data[i*step+j*channels];
+                                if(pix>10)
+                                        imgMat[i][j]=0;
+                                else
+                                        imgMat[i][j]=1;
+                }
+//      char* file1="input.txt",file2="output.txt";
+//      write2file(imgMat,height,width,"input.txt");
+        oldImg  = new short *[height+2];
+        newImg  = new short *[height+2];
+        thinImg = new short *[height];
+
+        for(i = 0; i < (height+2); i++)
+        {
+                oldImg[i] = new short [width+2];
+                newImg[i] = new short [width+2];
+                for(j = 0; j < (width+2); j++) 
+                        newImg[i][j] = 0;
+        }
+        for(i = 0; i < height; i++)
+        {
+                thinImg[i] = new short [width];
+                for(j = 0; j < width; j++) 
+                        //entering the data matrix into newImg[][]
+                        newImg[i+1][j+1]=imgMat[i][j];
+        }
+        for(i = 0; i < height+2; i++)
+        {
+                for(j = 0; j < width+2; j++) 
+                        oldImg[i][j] = newImg[i][j];
+        }
+
+        int substep=1;
+        int init=1,final=8;
+
+        do
+        {
+                nChanges = 0;
+                for(substep = init; substep <= final; substep++)                /
+      / step1.
+                {
+                        for(i = 0; i < height; i++)
+                        {       
+                                for(j = 0; j < width; j++)
+                                {
+                                        p1 = oldImg[i][j];   p2 = oldImg[i][j+1];
+         p3 = oldImg[i][j+2];
+                                        p4 = oldImg[i+1][j]; p  = oldImg[i+1][j+1
+      ]; p5 = oldImg[i+1][j+2];
+                                        p6 = oldImg[i+2][j]; p7 = oldImg[i+2][j+1
+      ]; p8 = oldImg[i+2][j+2];
+                                        remove = false;
+                                        //int substep=4;
+                                        if(p==0)
+                                                continue;
+
+                                        switch(substep){
+                                        case 1: if(p4 == 1 && p == 1 && p5 == 0)        /
+      / template (a) -- p4=1, p=1 and p5=0
+                                                        {                                       
+                                                                if((p2 == 0 && p3
+       == 1) ||               // p is a critical pixel
+                                                                   (p7 == 0 && p8
+       == 1))
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p2
+      +p3+p6+p7+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 2: if(p4 == 0 && p == 1 && p5 == 1)        /
+      / template (c) -- p4=0, p=1 and p5=1
+                                                        {
+                                                                if((p2 == 0 && p1
+       == 1) ||               // p is a critical pixel
+                                                                   (p7 == 0 && p6
+       == 1))
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p2
+      +p3+p6+p7+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 3: if(p2 == 0 && p == 1 && p7 == 1)        /
+      / template (b) -- p2=0, p=1 and p7=1
+                                                        {
+                                                                if((p4 == 0 && p1
+       == 1) ||               // p is a critical pixel
+                                                                   (p5 == 0 && p3
+       == 1))
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p3
+      +p4+p5+p6+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 4: if(p2 == 1 && p == 1 && p7 == 0)        /
+      / template (d) -- p2=1, p=1 and p7=0
+                                                        {
+                                                                if((p4 == 0 && p6
+       == 1) ||               // p is a critical pixel
+                                                                   (p5 == 0 && p8
+       == 1))
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p3
+      +p4+p5+p6+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 5: if(p1 == 1 && p == 1 && p8 == 0)        /
+      / template (d) -- p1=1, p=1 and p8=0
+                                                        {
+                                                                if((p4 == 0 && p6
+       == 1) ||               // p is a critical pixel
+                                                                   (p2 == 0 && p3
+       == 1) ||
+                                                                   (p2==0 && p3==
+      0 && p5==1) ||
+                                                                   (p4==0 && p6==
+      0 && p7==1) )
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p2+p3
+      +p4+p5+p6+p7) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 6: if(p3 == 1 && p == 1 && p6 == 0)        /
+      / template (d) -- p3=1, p=1 and p6=0
+                                                        {
+                                                                if((p2 == 0 && p1
+       == 1) ||               // p is a critical pixel
+                                                                   (p5 == 0 && p8
+       == 1) ||
+                                                                   (p2==0 && p1==
+      0 && p4==1) ||
+                                                                   (p5==0 && p8==
+      0 && p7==1) )
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p2
+      +p4+p5+p7+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 7: if(p6 == 1 && p == 1 && p3 == 0)        /
+      / template (d) -- p6=1, p=1 and p3=0
+                                                        {
+                                                                if((p4 == 0 && p1
+       == 1) ||               // p is a critical pixel
+                                                                   (p7 == 0 && p8
+       == 1) ||
+                                                                   (p4==0 && p1==
+      0 && p2==1) ||
+                                                                   (p7==0 && p8==
+      0 && p5==1) )
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p1+p2
+      +p4+p5+p7+p8) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        case 8: if(p8 == 1 && p == 1 && p1 == 0)        /
+      / template (d) -- p8=1, p=1 and p1=0
+                                                        {
+                                                                if((p5 == 0 && p3
+       == 1) ||               // p is a critical pixel
+                                                                   (p7 == 0 && p6
+       == 1) ||
+                                                                   (p5==0 && p3==
+      0 && p2==1) ||
+                                                                   (p7==0 && p6==
+      0 && p4==1) )
+                                                                        break;
+                                                                else
+                                                                {
+                                                                        if((p2+p3
+      +p4+p5+p6+p7) == 0)             // p is an end pixel
+                                                                                b
+      reak;
+                                                                        else
+                                                                                r
+      emove = true;
+                                                                }
+                                                        }
+                                                break;
+                                        }               // end of switch()
+                                        if(remove) // && (newImg[i+1][j+1] == 1))
+                      // p is removable
+                                        {
+                                                newImg[i+1][j+1] = 0;
+                                                nChanges++;
+                                        }
+                                }
+                        }
+                        for(int i = 0; i < height+2; i++)
+                        {
+                                for(int j = 0; j < width+2; j++) oldImg[i][j] = n
+      ewImg[i][j];
+                        }
+                }               // end of step1
+
+                //show the imgae
+                        for(i=0;i<height-1;i++)
+                        {
+                                for(j=0;j<width-1;j++) {
+                                        thinImg[i][j] = newImg[i+1][j+1];
+                                        if(thinImg[i][j] == 2) thinImg[i][j] = 1;
+      
+                                        int pix;
+                                        if(thinImg[i][j]==0)
+                                                pix=255;
+                                        else
+                                                pix=0;
+                                        for(k=0;k<channels;k++)
+                                                data[i*step+j*channels+k]=pix;
+                                }
+                        }
+                //display("Steps2", img );
+                //init=1;
+                //final=4;
+
+        }while(nChanges > 0);
+        for(i = 0; i < height; i++)
+        {
+                for(j = 0; j < width; j++)
+                {
+                        thinImg[i][j] = newImg[i+1][j+1];
+                        if(thinImg[i][j] == 2) thinImg[i][j] = 1;
+                }
+        }
+
+//      write2file(thinImg,height,width,"output.txt");
+
+        for(i=0;i<height-1;i++)
+        {
+                for(j=0;j<width-1;j++) {
+                        imgMat[i][j]=thinImg[i][j];
+                        int pix;
+                        if(thinImg[i][j]==0)
+                        {
+                                pix=255;
+                                mat[i][j]='1';
+                        }
+                        else
+                        {
+                                pix=0;
+                                mat[i][j]='0';
+                        }
+                        for(k=0;k<channels;k++)
+                                data[i*step+j*channels+k]=pix;
+                }
+        }
+        delete(oldImg); delete(newImg); delete(thinImg);
+        //ImageDump(0,0,height,width);
+}
+\end{DoxyCode}
+\hypertarget{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}{
+\index{operations.h@{operations.h}!Thresholding@{Thresholding}}
+\index{Thresholding@{Thresholding}!operations.h@{operations.h}}
+\subsubsection[{Thresholding}]{\setlength{\rightskip}{0pt plus 5cm}void Thresholding (
+\begin{DoxyParamCaption}
+\item[{IplImage $\ast$}]{ img, }
+\item[{int}]{ threshold}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a4c55f58a39a34b26c44d954b7390fe1a}
+Converts an image into a binary image according to a given threshold threshold: the given threshold 
+
+Definition at line 294 of file operations.h.
+
+
+\begin{DoxyCode}
+                                               {
+        int height,width,step,channels;
+        uchar *data;
+
+    // get the image data
+    height    = img->height;
+    width     = img->width;
+    step      = img->widthStep;
+    channels  = img->nChannels;
+    data      = (uchar *)img->imageData;
+
+        int i,j,k;
+
+        for(i=0;i<height;i++)
+                for(j=0;j<width;j++){
+                        int count=0;
+                        for(k=0;k<channels;k++){
+                                if(data[i*step+j*channels+k]>threshold)
+                                        count++;
+                        }
+                        if(count==channels)
+                                for(k=0;k<channels;k++)
+                                        data[i*step+j*channels+k]=255;
+                        else
+                                for(k=0;k<channels;k++)
+                                        data[i*step+j*channels+k]=0;
+                }
+
+}
+\end{DoxyCode}
+\hypertarget{operations_8h_a68834e99f1f75a83b918c383fd68487f}{
+\index{operations.h@{operations.h}!write2file@{write2file}}
+\index{write2file@{write2file}!operations.h@{operations.h}}
+\subsubsection[{write2file}]{\setlength{\rightskip}{0pt plus 5cm}void write2file (
+\begin{DoxyParamCaption}
+\item[{short $\ast$$\ast$}]{ mat, }
+\item[{int}]{ r, }
+\item[{int}]{ c, }
+\item[{char $\ast$}]{ file}
+\end{DoxyParamCaption}
+)}}
+\label{operations_8h_a68834e99f1f75a83b918c383fd68487f}
+
+
+Definition at line 9 of file operations.h.
+
+
+\begin{DoxyCode}
+                                                     {
+  ofstream myfile;
+  myfile.open (file);
+  for(int i=0;i<r;i++){
+                for(int j=0;j<c;j++)
+                  myfile << mat[i][j];
+        myfile<<"\n";
+  }
+  myfile.close();
+}
+\end{DoxyCode}
